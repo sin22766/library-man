@@ -7,8 +7,11 @@ import {
   Patch,
   Post,
   Query,
+  UseGuards,
 } from '@nestjs/common';
 import { Roles } from 'src/auth/decorators/roles.decorator';
+import { JWTAuthGuard } from 'src/auth/guards/jwt.guard';
+import { RolesGuard } from 'src/auth/guards/roles.guard';
 import { UserRole } from 'src/users/entities/user.entity';
 
 import { BooksService } from './books.service';
@@ -21,6 +24,7 @@ import { UpdateBookDto } from './dto/update-book.dto';
 export class BooksController {
   constructor(private readonly booksService: BooksService) {}
 
+  @UseGuards(JWTAuthGuard, RolesGuard)
   @Roles(UserRole.STAFF)
   @Post()
   add(@Body() addBookDto: AddBookDto) {
@@ -37,12 +41,14 @@ export class BooksController {
     return this.booksService.findOne(id);
   }
 
+  @UseGuards(JWTAuthGuard, RolesGuard)
   @Roles(UserRole.STAFF)
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateBookDto: UpdateBookDto) {
     return this.booksService.update(+id, updateBookDto);
   }
 
+  @UseGuards(JWTAuthGuard)
   @Roles(UserRole.STAFF)
   @Delete(':id')
   remove(@Param('id') id: string) {
