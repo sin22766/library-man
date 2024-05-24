@@ -4,7 +4,7 @@ import bcrypt from 'bcrypt';
 import { User } from 'src/users/entities/user.entity';
 import { UsersService } from 'src/users/users.service';
 
-import { JWTPayload } from './types/payload.type';
+import { JWTPayload } from './models/payload.model';
 
 @Injectable()
 export class AuthService {

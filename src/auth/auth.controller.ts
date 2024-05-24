@@ -8,13 +8,21 @@ import {
   UnauthorizedException,
   UseGuards,
 } from '@nestjs/common';
+import {
+  ApiBody,
+  ApiCreatedResponse,
+  ApiOkResponse,
+  ApiUnauthorizedResponse,
+} from '@nestjs/swagger';
 import { AuthUser } from 'src/users/decorators/user.decorator';
 import { User } from 'src/users/entities/user.entity';
 
 import { AuthService } from './auth.service';
+import { LoginDto } from './dto/login.dto';
 import { RegisterDto } from './dto/register.dto';
 import { JWTAuthGuard } from './guards/jwt.guard';
 import { LocalAuthGuard } from './guards/local.guard';
+import { Token } from './models/token.model';
 
 @Controller('auth')
 export class AuthController {
@@ -22,6 +30,8 @@ export class AuthController {
 
   @Post('register')
   @HttpCode(HttpStatus.CREATED)
+  @ApiCreatedResponse({ description: 'User registered successfully' })
+  @ApiUnauthorizedResponse({ description: 'User already exists' })
   async register(
     @Body() registerDto: RegisterDto,
   ): Promise<Omit<User, 'password'>> {
@@ -33,7 +43,7 @@ export class AuthController {
     );
 
     if (!user) {
-      throw new UnauthorizedException();
+      throw new UnauthorizedException('User already exists');
     }
 
     return user;
@@ -42,12 +52,17 @@ export class AuthController {
   @Post('login')
   @UseGuards(LocalAuthGuard)
   @HttpCode(HttpStatus.OK)
+  @ApiBody({ type: LoginDto })
+  @ApiOkResponse({ description: 'Login successful', type: Token })
+  @ApiUnauthorizedResponse({ description: 'Invalid credentials' })
   login(@AuthUser() user: User): Promise<{ access_token: string }> {
     return this.authService.login(user);
   }
 
   @Get('profile')
   @UseGuards(JWTAuthGuard)
+  @ApiOkResponse({ description: 'User profile', type: User })
+  @ApiUnauthorizedResponse()
   profile(@AuthUser() user: User): User {
     return user;
   }

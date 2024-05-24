@@ -1,4 +1,4 @@
-import { Injectable, UnauthorizedException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
@@ -24,11 +24,11 @@ export class UsersService {
     firstName: string,
     lastName: string,
     password: string,
-  ): Promise<User> {
+  ): Promise<User | null> {
     const existUser = await this.findByEmail(email);
 
     if (existUser) {
-      throw new UnauthorizedException('User already exists');
+      return null;
     }
 
     // TODO: Validate email, firstName, lastName, and password
@@ -38,7 +38,7 @@ export class UsersService {
       firstName,
       lastName,
       password,
-      role: UserRole.MEMBER,
+      roles: [UserRole.MEMBER],
     });
 
     await this.usersRepository.save(user);
