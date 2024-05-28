@@ -4,7 +4,7 @@ import bcrypt from 'bcrypt';
 import { User } from 'src/users/entities/user.entity';
 import { UsersService } from 'src/users/users.service';
 
-import { JWTPayload } from './models/payload.model';
+import { JWTPayloadDto } from './dto/payload.dto';
 
 @Injectable()
 export class AuthService {
@@ -36,7 +36,7 @@ export class AuthService {
   }
 
   async login(user: User): Promise<{ access_token: string }> {
-    const payload: JWTPayload = {
+    const payload: JWTPayloadDto = {
       id: user.id,
       email: user.email,
       roles: user.roles,

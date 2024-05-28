@@ -1,3 +1,4 @@
+import { ApiProperty } from '@nestjs/swagger';
 import {
   Column,
   Entity,
@@ -12,12 +13,17 @@ import { Book } from './book.entity';
 @Entity()
 export class Author {
   @PrimaryGeneratedColumn()
+  @ApiProperty()
   id: number;
 
-  @Column()
+  @Column({
+    unique: true,
+  })
+  @ApiProperty()
   name: string;
 
   @ManyToMany(() => Book, (book) => book.authors)
   @JoinTable()
+  @ApiProperty()
   books: Relation<Book[]>;
 }

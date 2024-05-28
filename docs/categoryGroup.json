@@ -1,0 +1,398 @@
+[
+    {
+        "id": 0,
+        "name": "Computer science, knowledge, and systems"
+    },
+    {
+        "id": 10,
+        "name": "Bibliographies"
+    },
+    {
+        "id": 20,
+        "name": "Library and information sciences"
+    },
+    {
+        "id": 30,
+        "name": "Encyclopedias and books of facts"
+    },
+    {
+        "id": 50,
+        "name": "Magazines, journals and serials"
+    },
+    {
+        "id": 60,
+        "name": "Associations, organizations and museums"
+    },
+    {
+        "id": 70,
+        "name": "News media, journalism, and publishing"
+    },
+    {
+        "id": 80,
+        "name": "Quotations"
+    },
+    {
+        "id": 90,
+        "name": "Manuscripts and rare books"
+    },
+    {
+        "id": 100,
+        "name": "Philosophy"
+    },
+    {
+        "id": 110,
+        "name": "Metaphysics"
+    },
+    {
+        "id": 120,
+        "name": "Epistemology"
+    },
+    {
+        "id": 130,
+        "name": "Parapsychology and occultism"
+    },
+    {
+        "id": 140,
+        "name": "Philosophical schools of thought"
+    },
+    {
+        "id": 150,
+        "name": "Psychology"
+    },
+    {
+        "id": 160,
+        "name": "Philosophical logic"
+    },
+    {
+        "id": 170,
+        "name": "Ethics"
+    },
+    {
+        "id": 180,
+        "name": "Ancient, medieval, and Eastern philosophy"
+    },
+    {
+        "id": 190,
+        "name": "Modern Western philosophy (19th-century, 20th-century)"
+    },
+    {
+        "id": 200,
+        "name": "Religion"
+    },
+    {
+        "id": 210,
+        "name": "Philosophy and theory of religion"
+    },
+    {
+        "id": 220,
+        "name": "The Bible"
+    },
+    {
+        "id": 230,
+        "name": "Christianity"
+    },
+    {
+        "id": 240,
+        "name": "Christian practice and observance"
+    },
+    {
+        "id": 250,
+        "name": "Christian orders and local church"
+    },
+    {
+        "id": 260,
+        "name": "Social and ecclesiastical theology"
+    },
+    {
+        "id": 270,
+        "name": "History of Christianity"
+    },
+    {
+        "id": 280,
+        "name": "Christian denominations"
+    },
+    {
+        "id": 290,
+        "name": "Other religions"
+    },
+    {
+        "id": 300,
+        "name": "Social sciences, sociology, and anthropology"
+    },
+    {
+        "id": 310,
+        "name": "Statistics"
+    },
+    {
+        "id": 320,
+        "name": "Political science"
+    },
+    {
+        "id": 330,
+        "name": "Economics"
+    },
+    {
+        "id": 340,
+        "name": "Law"
+    },
+    {
+        "id": 350,
+        "name": "Public administration and military science"
+    },
+    {
+        "id": 360,
+        "name": "Social problems and social services"
+    },
+    {
+        "id": 370,
+        "name": "Education"
+    },
+    {
+        "id": 380,
+        "name": "Commerce, communications and transportation"
+    },
+    {
+        "id": 390,
+        "name": "Customs, etiquette and folklore"
+    },
+    {
+        "id": 400,
+        "name": "Language"
+    },
+    {
+        "id": 410,
+        "name": "Linguistics"
+    },
+    {
+        "id": 420,
+        "name": "English and Old English languages"
+    },
+    {
+        "id": 430,
+        "name": "German and related languages"
+    },
+    {
+        "id": 440,
+        "name": "French and related languages"
+    },
+    {
+        "id": 450,
+        "name": "Italian, Romanian and related languages"
+    },
+    {
+        "id": 460,
+        "name": "Spanish, Portuguese, Galician"
+    },
+    {
+        "id": 470,
+        "name": "Latin and Italic languages"
+    },
+    {
+        "id": 480,
+        "name": "Classical and modern Greek languages"
+    },
+    {
+        "id": 490,
+        "name": "Other languages"
+    },
+    {
+        "id": 500,
+        "name": "Science"
+    },
+    {
+        "id": 510,
+        "name": "Mathematics"
+    },
+    {
+        "id": 520,
+        "name": "Astronomy"
+    },
+    {
+        "id": 530,
+        "name": "Physics"
+    },
+    {
+        "id": 540,
+        "name": "Chemistry"
+    },
+    {
+        "id": 550,
+        "name": "Earth sciences and geology"
+    },
+    {
+        "id": 560,
+        "name": "Fossils and prehistoric life"
+    },
+    {
+        "id": 570,
+        "name": "Biology"
+    },
+    {
+        "id": 580,
+        "name": "Plants"
+    },
+    {
+        "id": 590,
+        "name": "Animals (Zoology)"
+    },
+    {
+        "id": 600,
+        "name": "Technology"
+    },
+    {
+        "id": 610,
+        "name": "Medicine and health"
+    },
+    {
+        "id": 620,
+        "name": "Engineering"
+    },
+    {
+        "id": 630,
+        "name": "Agriculture"
+    },
+    {
+        "id": 640,
+        "name": "Home and family management"
+    },
+    {
+        "id": 650,
+        "name": "Management and public relations"
+    },
+    {
+        "id": 660,
+        "name": "Chemical engineering"
+    },
+    {
+        "id": 670,
+        "name": "Manufacturing"
+    },
+    {
+        "id": 680,
+        "name": "Manufacture for specific uses"
+    },
+    {
+        "id": 690,
+        "name": "Construction of buildings"
+    },
+    {
+        "id": 700,
+        "name": "Arts"
+    },
+    {
+        "id": 710,
+        "name": "Area planning and landscape architecture"
+    },
+    {
+        "id": 720,
+        "name": "Architecture"
+    },
+    {
+        "id": 730,
+        "name": "Sculpture, ceramics and metalwork"
+    },
+    {
+        "id": 740,
+        "name": "Graphic arts and decorative arts"
+    },
+    {
+        "id": 750,
+        "name": "Painting"
+    },
+    {
+        "id": 760,
+        "name": "Printmaking and prints"
+    },
+    {
+        "id": 770,
+        "name": "Photography, computer art, film, video"
+    },
+    {
+        "id": 780,
+        "name": "Music"
+    },
+    {
+        "id": 790,
+        "name": "Sports, games and entertainment"
+    },
+    {
+        "id": 800,
+        "name": "Literature, rhetoric and criticism"
+    },
+    {
+        "id": 810,
+        "name": "American literature in English"
+    },
+    {
+        "id": 820,
+        "name": "English and Old English literatures"
+    },
+    {
+        "id": 830,
+        "name": "German and related literatures"
+    },
+    {
+        "id": 840,
+        "name": "French and related literatures"
+    },
+    {
+        "id": 850,
+        "name": "Italian, Romanian and related literatures"
+    },
+    {
+        "id": 860,
+        "name": "Spanish, Portuguese, Galician literatures"
+    },
+    {
+        "id": 870,
+        "name": "Latin and Italic literatures"
+    },
+    {
+        "id": 880,
+        "name": "Classical and modern Greek literatures"
+    },
+    {
+        "id": 890,
+        "name": "Other literatures"
+    },
+    {
+        "id": 900,
+        "name": "History"
+    },
+    {
+        "id": 910,
+        "name": "Geography and travel"
+    },
+    {
+        "id": 920,
+        "name": "Biography and genealogy"
+    },
+    {
+        "id": 930,
+        "name": "History of ancient world (to c.499)"
+    },
+    {
+        "id": 940,
+        "name": "History of Europe"
+    },
+    {
+        "id": 950,
+        "name": "History of Asia"
+    },
+    {
+        "id": 960,
+        "name": "History of Africa"
+    },
+    {
+        "id": 970,
+        "name": "History of North America"
+    },
+    {
+        "id": 980,
+        "name": "History of South America"
+    },
+    {
+        "id": 990,
+        "name": "History of other areas"
+    }
+]

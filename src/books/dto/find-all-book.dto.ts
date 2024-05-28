@@ -20,9 +20,30 @@ export class FindAllBookDto {
   page: number = 1;
 
   @ApiPropertyOptional({
-    description: 'Query string to search for books',
+    description: 'Query title to search for books',
     default: '',
   })
   @IsOptional()
-  search: string = '';
+  title: string = '';
+
+  @ApiPropertyOptional({
+    description: 'Query title to search for books',
+    default: '',
+  })
+  @IsOptional()
+  author: string = '';
+
+  @ApiPropertyOptional({
+    description: 'Query category to search for books',
+    default: '',
+  })
+  @IsOptional()
+  category: string = '';
+
+  @ApiPropertyOptional({
+    description: 'Query publisher to search for books',
+    default: '',
+  })
+  @IsOptional()
+  publisher: string = '';
 }

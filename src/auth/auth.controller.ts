@@ -9,6 +9,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import {
+  ApiBearerAuth,
   ApiBody,
   ApiCreatedResponse,
   ApiOkResponse,
@@ -20,9 +21,9 @@ import { User } from 'src/users/entities/user.entity';
 import { AuthService } from './auth.service';
 import { LoginDto } from './dto/login.dto';
 import { RegisterDto } from './dto/register.dto';
+import { TokenDto } from './dto/token.dto';
 import { JWTAuthGuard } from './guards/jwt.guard';
 import { LocalAuthGuard } from './guards/local.guard';
-import { Token } from './models/token.model';
 
 @Controller('auth')
 export class AuthController {
@@ -53,9 +54,9 @@ export class AuthController {
   @UseGuards(LocalAuthGuard)
   @HttpCode(HttpStatus.OK)
   @ApiBody({ type: LoginDto })
-  @ApiOkResponse({ description: 'Login successful', type: Token })
+  @ApiOkResponse({ description: 'Login successful', type: TokenDto })
   @ApiUnauthorizedResponse({ description: 'Invalid credentials' })
-  login(@AuthUser() user: User): Promise<{ access_token: string }> {
+  login(@AuthUser() user: User): Promise<TokenDto> {
     return this.authService.login(user);
   }
 
@@ -63,6 +64,7 @@ export class AuthController {
   @UseGuards(JWTAuthGuard)
   @ApiOkResponse({ description: 'User profile', type: User })
   @ApiUnauthorizedResponse()
+  @ApiBearerAuth()
   profile(@AuthUser() user: User): User {
     return user;
   }

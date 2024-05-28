@@ -1,3 +1,4 @@
+import { ApiProperty } from '@nestjs/swagger';
 import bcrypt from 'bcrypt';
 import { Checkout } from 'src/checkout/entities/checkout.entity';
 import {
@@ -18,18 +19,23 @@ export enum UserRole {
 @Entity()
 export class User {
   @PrimaryGeneratedColumn('uuid', { name: 'id' })
+  @ApiProperty()
   id: string;
 
   @Column({ unique: true })
+  @ApiProperty()
   email: string;
 
   @Column()
+  @ApiProperty()
   firstName: string;
 
   @Column()
+  @ApiProperty()
   lastName: string;
 
   @Column()
+  @ApiProperty()
   password: string;
 
   @Column({
@@ -38,9 +44,11 @@ export class User {
     array: true,
     default: [UserRole.MEMBER],
   })
+  @ApiProperty()
   roles: UserRole[];
 
   @OneToMany(() => Checkout, (checkout) => checkout.user)
+  @ApiProperty()
   checkouts: Relation<Checkout[]>;
 
   @BeforeInsert()

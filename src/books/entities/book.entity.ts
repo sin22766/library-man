@@ -1,3 +1,4 @@
+import { ApiProperty } from '@nestjs/swagger';
 import {
   Column,
   Entity,
@@ -14,23 +15,30 @@ import { Category } from './category.entity';
 
 @Entity()
 export class Book {
+  @ApiProperty()
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
+  @ApiProperty()
   @Column()
   title: string;
 
+  @ApiProperty()
   @Column({
     nullable: true,
+    unique: true,
   })
   isbn: string;
 
+  @ApiProperty()
   @ManyToMany(() => Author, (author) => author.books)
-  authors: Author[];
+  authors: Relation<Author[]>;
 
+  @ApiProperty()
   @ManyToOne(() => Category, (category) => category.books)
   category: Relation<Category>;
 
+  @ApiProperty()
   @OneToMany(() => BookCopy, (bookCopy) => bookCopy.book)
   bookCopies: Relation<BookCopy[]>;
 }

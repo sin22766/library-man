@@ -1,0 +1,3626 @@
+[
+    {
+        "id": 0,
+        "name": "Computer science, information and general works"
+    },
+    {
+        "id": 1,
+        "name": "Knowledge"
+    },
+    {
+        "id": 2,
+        "name": "The book (writing, libraries, and book-related topics)"
+    },
+    {
+        "id": 3,
+        "name": "Systems"
+    },
+    {
+        "id": 4,
+        "name": "Data processing and computer science"
+    },
+    {
+        "id": 5,
+        "name": "Computer programming, programs, and data"
+    },
+    {
+        "id": 6,
+        "name": "Special computer methods (e.g. AI, multimedia, VR)"
+    },
+    {
+        "id": 10,
+        "name": "Bibliography"
+    },
+    {
+        "id": 11,
+        "name": "Bibliographies"
+    },
+    {
+        "id": 12,
+        "name": "Bibliographies of individuals"
+    },
+    {
+        "id": 13,
+        "name": "[Unassigned]"
+    },
+    {
+        "id": 14,
+        "name": "Bibliographies of anonymous and pseudonymous works"
+    },
+    {
+        "id": 15,
+        "name": "Bibliographies of works from specific places"
+    },
+    {
+        "id": 16,
+        "name": "Bibliographies of works on specific subjects"
+    },
+    {
+        "id": 17,
+        "name": "General subject catalogs"
+    },
+    {
+        "id": 18,
+        "name": "Catalogs arranged by author, date, etc."
+    },
+    {
+        "id": 19,
+        "name": "Dictionary catalogs"
+    },
+    {
+        "id": 20,
+        "name": "Library and information sciences"
+    },
+    {
+        "id": 21,
+        "name": "Library relationships (with archives, information centers, etc.)"
+    },
+    {
+        "id": 22,
+        "name": "Administration of physical plant"
+    },
+    {
+        "id": 23,
+        "name": "Personnel management"
+    },
+    {
+        "id": 25,
+        "name": "Library operations"
+    },
+    {
+        "id": 26,
+        "name": "Libraries for specific subjects"
+    },
+    {
+        "id": 27,
+        "name": "General libraries"
+    },
+    {
+        "id": 28,
+        "name": "Reading and use of other information media"
+    },
+    {
+        "id": 30,
+        "name": "General encyclopedic works"
+    },
+    {
+        "id": 31,
+        "name": "Encyclopedias in American English"
+    },
+    {
+        "id": 32,
+        "name": "Encyclopedias in English"
+    },
+    {
+        "id": 33,
+        "name": "Encyclopedias in other Germanic languages"
+    },
+    {
+        "id": 34,
+        "name": "Encyclopedias in French, Occitan, and Catalan"
+    },
+    {
+        "id": 35,
+        "name": "Encyclopedias in Italian, Romanian, and related languages"
+    },
+    {
+        "id": 36,
+        "name": "Encyclopedias in Spanish and Portuguese"
+    },
+    {
+        "id": 37,
+        "name": "Encyclopedias in Slavic languages"
+    },
+    {
+        "id": 38,
+        "name": "Encyclopedias in Scandinavian languages"
+    },
+    {
+        "id": 39,
+        "name": "Encyclopedias in other languages"
+    },
+    {
+        "id": 50,
+        "name": "General serial publications"
+    },
+    {
+        "id": 51,
+        "name": "Serials in American English"
+    },
+    {
+        "id": 52,
+        "name": "Serials in English"
+    },
+    {
+        "id": 53,
+        "name": "Serials in other Germanic languages"
+    },
+    {
+        "id": 54,
+        "name": "Serials in French, Occitan, and Catalan"
+    },
+    {
+        "id": 55,
+        "name": "Serials in Italian, Romanian, and related languages"
+    },
+    {
+        "id": 56,
+        "name": "Serials in Spanish and Portuguese"
+    },
+    {
+        "id": 57,
+        "name": "Serials in Slavic languages"
+    },
+    {
+        "id": 58,
+        "name": "Serials in Scandinavian languages"
+    },
+    {
+        "id": 59,
+        "name": "Serials in other languages"
+    },
+    {
+        "id": 60,
+        "name": "General organizations and museum science"
+    },
+    {
+        "id": 61,
+        "name": "Organizations in North America"
+    },
+    {
+        "id": 62,
+        "name": "Organizations in British Isles; in England"
+    },
+    {
+        "id": 63,
+        "name": "Organizations in central Europe; in Germany"
+    },
+    {
+        "id": 64,
+        "name": "Organizations in France and Monaco"
+    },
+    {
+        "id": 65,
+        "name": "Organizations in Italy and adjacent islands"
+    },
+    {
+        "id": 66,
+        "name": "Organizations in Iberian peninsula and adjacent islands"
+    },
+    {
+        "id": 67,
+        "name": "Organizations in eastern Europe; in Russia"
+    },
+    {
+        "id": 68,
+        "name": "Organizations in other geographic areas"
+    },
+    {
+        "id": 69,
+        "name": "Museum science"
+    },
+    {
+        "id": 70,
+        "name": "News media, journalism, and publishing"
+    },
+    {
+        "id": 71,
+        "name": "Newspapers in North America"
+    },
+    {
+        "id": 72,
+        "name": "Newspapers in British Isles; in England"
+    },
+    {
+        "id": 73,
+        "name": "Newspapers in central Europe; in Germany"
+    },
+    {
+        "id": 74,
+        "name": "Newspapers in France and Monaco"
+    },
+    {
+        "id": 75,
+        "name": "Newspapers in Italy and adjacent islands"
+    },
+    {
+        "id": 76,
+        "name": "Newspapers in Iberian peninsula and adjacent islands"
+    },
+    {
+        "id": 77,
+        "name": "Newspapers in eastern Europe; in Russia"
+    },
+    {
+        "id": 78,
+        "name": "Newspapers in Scandinavia"
+    },
+    {
+        "id": 79,
+        "name": "Newspapers in other geographic areas"
+    },
+    {
+        "id": 80,
+        "name": "General collections"
+    },
+    {
+        "id": 81,
+        "name": "Collections in American English"
+    },
+    {
+        "id": 82,
+        "name": "Collections in English"
+    },
+    {
+        "id": 83,
+        "name": "Collections in other Germanic languages"
+    },
+    {
+        "id": 84,
+        "name": "Collections in French, Occitan, Catalan"
+    },
+    {
+        "id": 85,
+        "name": "Collections in Italian, Romanian, and related languages"
+    },
+    {
+        "id": 86,
+        "name": "Collections in Spanish and Portuguese"
+    },
+    {
+        "id": 87,
+        "name": "Collections in Slavic languages"
+    },
+    {
+        "id": 88,
+        "name": "Collections in Scandinavian languages"
+    },
+    {
+        "id": 89,
+        "name": "Collections in other languages"
+    },
+    {
+        "id": 90,
+        "name": "Manuscripts and rare books"
+    },
+    {
+        "id": 91,
+        "name": "Manuscripts"
+    },
+    {
+        "id": 92,
+        "name": "Block books"
+    },
+    {
+        "id": 93,
+        "name": "Incunabula"
+    },
+    {
+        "id": 94,
+        "name": "Printed books"
+    },
+    {
+        "id": 95,
+        "name": "Books notable for bindings"
+    },
+    {
+        "id": 96,
+        "name": "Books notable for illustrations"
+    },
+    {
+        "id": 97,
+        "name": "Books notable for ownership or origin"
+    },
+    {
+        "id": 98,
+        "name": "Prohibited works, forgeries, and hoaxes"
+    },
+    {
+        "id": 99,
+        "name": "Books notable for format"
+    },
+    {
+        "id": 100,
+        "name": "Philosophy and psychology"
+    },
+    {
+        "id": 101,
+        "name": "Theory of philosophy"
+    },
+    {
+        "id": 102,
+        "name": "Miscellany"
+    },
+    {
+        "id": 103,
+        "name": "Dictionaries and encyclopedias"
+    },
+    {
+        "id": 105,
+        "name": "Serial publications"
+    },
+    {
+        "id": 106,
+        "name": "Organizations and management"
+    },
+    {
+        "id": 107,
+        "name": "Education, research, related topics of philosophy"
+    },
+    {
+        "id": 108,
+        "name": "Groups of people"
+    },
+    {
+        "id": 109,
+        "name": "History and collected biography"
+    },
+    {
+        "id": 110,
+        "name": "Metaphysics"
+    },
+    {
+        "id": 111,
+        "name": "Ontology"
+    },
+    {
+        "id": 113,
+        "name": "Cosmology (Philosophy of nature)"
+    },
+    {
+        "id": 114,
+        "name": "Space"
+    },
+    {
+        "id": 115,
+        "name": "Time"
+    },
+    {
+        "id": 116,
+        "name": "Change"
+    },
+    {
+        "id": 117,
+        "name": "Structure"
+    },
+    {
+        "id": 118,
+        "name": "Force and energy"
+    },
+    {
+        "id": 119,
+        "name": "Number and quantity"
+    },
+    {
+        "id": 120,
+        "name": "Epistemology, causation, and humankind"
+    },
+    {
+        "id": 121,
+        "name": "Epistemology (Theory of knowledge)"
+    },
+    {
+        "id": 122,
+        "name": "Causation"
+    },
+    {
+        "id": 123,
+        "name": "Determinism and indeterminism"
+    },
+    {
+        "id": 124,
+        "name": "Teleology"
+    },
+    {
+        "id": 126,
+        "name": "The self"
+    },
+    {
+        "id": 127,
+        "name": "The unconscious and the subconscious"
+    },
+    {
+        "id": 128,
+        "name": "Humankind"
+    },
+    {
+        "id": 129,
+        "name": "Origin and destiny of individual souls"
+    },
+    {
+        "id": 130,
+        "name": "Parapsychology and occultism"
+    },
+    {
+        "id": 131,
+        "name": "Parapsychological and occult methods for achieving well-being, happiness, success"
+    },
+    {
+        "id": 133,
+        "name": "Specific topics in parapsychology and occultism"
+    },
+    {
+        "id": 135,
+        "name": "Dreams and mysteries"
+    },
+    {
+        "id": 137,
+        "name": "Divinatory graphology"
+    },
+    {
+        "id": 138,
+        "name": "Physiognomy"
+    },
+    {
+        "id": 139,
+        "name": "Phrenology"
+    },
+    {
+        "id": 140,
+        "name": "Specific philosophical schools and viewpoints"
+    },
+    {
+        "id": 141,
+        "name": "Idealism and related systems and doctrines"
+    },
+    {
+        "id": 142,
+        "name": "Critical philosophy"
+    },
+    {
+        "id": 143,
+        "name": "Bergsonism and intuitionism"
+    },
+    {
+        "id": 144,
+        "name": "Humanism and related systems and doctrines"
+    },
+    {
+        "id": 145,
+        "name": "Sensationalism"
+    },
+    {
+        "id": 146,
+        "name": "Naturalism and related systems and doctrines"
+    },
+    {
+        "id": 147,
+        "name": "Pantheism and related systems and doctrines"
+    },
+    {
+        "id": 148,
+        "name": "Dogmatism, eclecticism, liberalism, syncretism, and traditionalism"
+    },
+    {
+        "id": 149,
+        "name": "Other philosophical systems and doctrines"
+    },
+    {
+        "id": 150,
+        "name": "Psychology"
+    },
+    {
+        "id": 152,
+        "name": "Sensory perception, movement, emotions, and physiological drives"
+    },
+    {
+        "id": 153,
+        "name": "Conscious mental processes and intelligence"
+    },
+    {
+        "id": 154,
+        "name": "Subconscious and altered states and processes"
+    },
+    {
+        "id": 155,
+        "name": "Differential and developmental psychology"
+    },
+    {
+        "id": 156,
+        "name": "Comparative psychology"
+    },
+    {
+        "id": 158,
+        "name": "Applied psychology"
+    },
+    {
+        "id": 160,
+        "name": "Philosophical logic"
+    },
+    {
+        "id": 161,
+        "name": "Induction"
+    },
+    {
+        "id": 162,
+        "name": "Deduction"
+    },
+    {
+        "id": 165,
+        "name": "Fallacies and sources of error"
+    },
+    {
+        "id": 166,
+        "name": "Syllogisms"
+    },
+    {
+        "id": 167,
+        "name": "Hypotheses"
+    },
+    {
+        "id": 168,
+        "name": "Argument and persuasion"
+    },
+    {
+        "id": 169,
+        "name": "Analogy"
+    },
+    {
+        "id": 170,
+        "name": "Ethics (Moral philosophy)"
+    },
+    {
+        "id": 171,
+        "name": "Ethical systems"
+    },
+    {
+        "id": 172,
+        "name": "Political ethics"
+    },
+    {
+        "id": 173,
+        "name": "Ethics of family relationships"
+    },
+    {
+        "id": 174,
+        "name": "Occupational ethics"
+    },
+    {
+        "id": 175,
+        "name": "Ethics of recreation, leisure, public performances, communication"
+    },
+    {
+        "id": 176,
+        "name": "Ethics of sex and reproduction"
+    },
+    {
+        "id": 177,
+        "name": "Ethics of social relations"
+    },
+    {
+        "id": 178,
+        "name": "Ethics of consumption"
+    },
+    {
+        "id": 179,
+        "name": "Other ethical norms"
+    },
+    {
+        "id": 180,
+        "name": "Ancient, medieval, eastern philosophy"
+    },
+    {
+        "id": 181,
+        "name": "Eastern philosophy"
+    },
+    {
+        "id": 182,
+        "name": "Pre-Socratic Greek philosophies"
+    },
+    {
+        "id": 183,
+        "name": "Sophistic, Socratic, related Greek philosophies"
+    },
+    {
+        "id": 184,
+        "name": "Platonic philosophy"
+    },
+    {
+        "id": 185,
+        "name": "Aristotelian philosophy"
+    },
+    {
+        "id": 186,
+        "name": "Skeptic and Neoplatonic philosophies"
+    },
+    {
+        "id": 187,
+        "name": "Epicurean philosophy"
+    },
+    {
+        "id": 188,
+        "name": "Stoic philosophy"
+    },
+    {
+        "id": 189,
+        "name": "Medieval Western philosophy"
+    },
+    {
+        "id": 190,
+        "name": "Modern Western and other noneastern philosophy"
+    },
+    {
+        "id": 191,
+        "name": "Philosophy of the United States and Canada"
+    },
+    {
+        "id": 192,
+        "name": "Philosophy of the British Isles"
+    },
+    {
+        "id": 193,
+        "name": "Philosophy of Germany and Austria"
+    },
+    {
+        "id": 194,
+        "name": "Philosophy of France"
+    },
+    {
+        "id": 195,
+        "name": "Philosophy of Italy"
+    },
+    {
+        "id": 196,
+        "name": "Philosophy of Spain and Portugal"
+    },
+    {
+        "id": 197,
+        "name": "Philosophy of Russia"
+    },
+    {
+        "id": 198,
+        "name": "Philosophy of Scandinavia and Finland"
+    },
+    {
+        "id": 199,
+        "name": "Philosophy in other geographic areas"
+    },
+    {
+        "id": 200,
+        "name": "Religion"
+    },
+    {
+        "id": 201,
+        "name": "Religious mythology, general classes of religion, interreligious relations and attitudes, social theology"
+    },
+    {
+        "id": 202,
+        "name": "Doctrines"
+    },
+    {
+        "id": 203,
+        "name": "Public worship and other practices"
+    },
+    {
+        "id": 204,
+        "name": "Religious experience, life, practice"
+    },
+    {
+        "id": 205,
+        "name": "Religious ethics"
+    },
+    {
+        "id": 206,
+        "name": "Leaders and organization"
+    },
+    {
+        "id": 207,
+        "name": "Missions and religious education"
+    },
+    {
+        "id": 208,
+        "name": "Sources"
+    },
+    {
+        "id": 209,
+        "name": "Sects and reform movements"
+    },
+    {
+        "id": 210,
+        "name": "Philosophy and theory of religion"
+    },
+    {
+        "id": 211,
+        "name": "Concepts of God"
+    },
+    {
+        "id": 212,
+        "name": "Existence, ways of knowing God, attributes of God"
+    },
+    {
+        "id": 213,
+        "name": "Creation"
+    },
+    {
+        "id": 214,
+        "name": "Theodicy"
+    },
+    {
+        "id": 215,
+        "name": "Science and religion"
+    },
+    {
+        "id": 218,
+        "name": "Humankind"
+    },
+    {
+        "id": 220,
+        "name": "Bible"
+    },
+    {
+        "id": 221,
+        "name": "Old Testament (Tanakh)"
+    },
+    {
+        "id": 222,
+        "name": "Historical books of Old Testament"
+    },
+    {
+        "id": 223,
+        "name": "Poetic books of Old Testament"
+    },
+    {
+        "id": 224,
+        "name": "Prophetic books of Old Testament"
+    },
+    {
+        "id": 225,
+        "name": "New Testament"
+    },
+    {
+        "id": 226,
+        "name": "Gospels and Acts"
+    },
+    {
+        "id": 227,
+        "name": "Epistles"
+    },
+    {
+        "id": 228,
+        "name": "Revelation (Apocalypse)"
+    },
+    {
+        "id": 229,
+        "name": "Apocrypha, pseudepigrapha, and inter-testamental works"
+    },
+    {
+        "id": 230,
+        "name": "Christianity"
+    },
+    {
+        "id": 231,
+        "name": "God"
+    },
+    {
+        "id": 232,
+        "name": "Jesus Christ and his family"
+    },
+    {
+        "id": 233,
+        "name": "Humankind"
+    },
+    {
+        "id": 234,
+        "name": "Salvation and grace"
+    },
+    {
+        "id": 235,
+        "name": "Spiritual beings"
+    },
+    {
+        "id": 236,
+        "name": "Eschatology"
+    },
+    {
+        "id": 238,
+        "name": "Creeds, confessions of faith, covenants, and catechisms"
+    },
+    {
+        "id": 239,
+        "name": "Apologetics and polemics"
+    },
+    {
+        "id": 240,
+        "name": "Christian moral and devotional theology"
+    },
+    {
+        "id": 241,
+        "name": "Christian ethics"
+    },
+    {
+        "id": 242,
+        "name": "Devotional literature"
+    },
+    {
+        "id": 243,
+        "name": "Evangelistic writings for individuals and families"
+    },
+    {
+        "id": 246,
+        "name": "Use of art in Christianity"
+    },
+    {
+        "id": 247,
+        "name": "Church furnishings and related articles"
+    },
+    {
+        "id": 248,
+        "name": "Christian experience, practice, life"
+    },
+    {
+        "id": 249,
+        "name": "Christian observances in family life"
+    },
+    {
+        "id": 250,
+        "name": "Local Christian church and Christian religious orders"
+    },
+    {
+        "id": 251,
+        "name": "Preaching (Homiletics)"
+    },
+    {
+        "id": 252,
+        "name": "Texts of sermons"
+    },
+    {
+        "id": 253,
+        "name": "Pastoral office and work (Pastoral theology)"
+    },
+    {
+        "id": 254,
+        "name": "Parish administration"
+    },
+    {
+        "id": 255,
+        "name": "Religious congregations and orders"
+    },
+    {
+        "id": 259,
+        "name": "Pastoral care of families, of specific groups of people"
+    },
+    {
+        "id": 260,
+        "name": "Christian social and ecclesiastical theology"
+    },
+    {
+        "id": 261,
+        "name": "Social theology and interreligious relations and attitudes"
+    },
+    {
+        "id": 262,
+        "name": "Ecclesiology"
+    },
+    {
+        "id": 263,
+        "name": "Days, times, places of religious observance"
+    },
+    {
+        "id": 264,
+        "name": "Public worship"
+    },
+    {
+        "id": 265,
+        "name": "Sacraments, other rites and acts"
+    },
+    {
+        "id": 266,
+        "name": "Missions"
+    },
+    {
+        "id": 267,
+        "name": "Associations for religious work"
+    },
+    {
+        "id": 268,
+        "name": "Religious education"
+    },
+    {
+        "id": 269,
+        "name": "Spiritual renewal"
+    },
+    {
+        "id": 270,
+        "name": "History, geographic treatment, biography of Christianity"
+    },
+    {
+        "id": 271,
+        "name": "Religious congregations and orders in church history"
+    },
+    {
+        "id": 272,
+        "name": "Persecutions in church history"
+    },
+    {
+        "id": 273,
+        "name": "Doctrinal controversies and heresies in general church history"
+    },
+    {
+        "id": 274,
+        "name": "Christianity in Europe"
+    },
+    {
+        "id": 275,
+        "name": "Christianity in Asia"
+    },
+    {
+        "id": 276,
+        "name": "Christianity in Africa"
+    },
+    {
+        "id": 277,
+        "name": "Christianity in North America"
+    },
+    {
+        "id": 278,
+        "name": "Christianity in South America"
+    },
+    {
+        "id": 279,
+        "name": "History of Christianity in other areas"
+    },
+    {
+        "id": 280,
+        "name": "Denominations and sects of Christian church"
+    },
+    {
+        "id": 281,
+        "name": "Early church and Eastern churches"
+    },
+    {
+        "id": 282,
+        "name": "Roman Catholic Church"
+    },
+    {
+        "id": 283,
+        "name": "Anglican churches"
+    },
+    {
+        "id": 284,
+        "name": "Protestant denominations of Continental origin and related body"
+    },
+    {
+        "id": 285,
+        "name": "Presbyterian churches, Reformed churches centered in America, Congregational churches"
+    },
+    {
+        "id": 286,
+        "name": "Baptist, Restoration Movement, Adventist churches"
+    },
+    {
+        "id": 287,
+        "name": "Methodist churches; churches related to Methodism"
+    },
+    {
+        "id": 289,
+        "name": "Other denominations and sects"
+    },
+    {
+        "id": 290,
+        "name": "Other religions"
+    },
+    {
+        "id": 292,
+        "name": "Classical religion (Greek and Roman religion)"
+    },
+    {
+        "id": 293,
+        "name": "Germanic religion"
+    },
+    {
+        "id": 294,
+        "name": "Religions of Indic origin"
+    },
+    {
+        "id": 295,
+        "name": "Zoroastrianism (Mazdaism, Parseeism)"
+    },
+    {
+        "id": 296,
+        "name": "Judaism"
+    },
+    {
+        "id": 297,
+        "name": "Islam, B\u00e1bism, and Bah\u00e1\u02bc\u00ed Faith"
+    },
+    {
+        "id": 299,
+        "name": "Religions not provided for elsewhere"
+    },
+    {
+        "id": 300,
+        "name": "Social sciences"
+    },
+    {
+        "id": 301,
+        "name": "Sociology and anthropology"
+    },
+    {
+        "id": 302,
+        "name": "Social interaction"
+    },
+    {
+        "id": 303,
+        "name": "Social processes"
+    },
+    {
+        "id": 304,
+        "name": "Factors affecting social behavior"
+    },
+    {
+        "id": 305,
+        "name": "Groups of people"
+    },
+    {
+        "id": 306,
+        "name": "Culture and institutions"
+    },
+    {
+        "id": 307,
+        "name": "Communities"
+    },
+    {
+        "id": 310,
+        "name": "Collections of general statistics"
+    },
+    {
+        "id": 314,
+        "name": "General statistics of Europe"
+    },
+    {
+        "id": 315,
+        "name": "General statistics of Asia"
+    },
+    {
+        "id": 316,
+        "name": "General statistics of Africa"
+    },
+    {
+        "id": 317,
+        "name": "General statistics of North America"
+    },
+    {
+        "id": 318,
+        "name": "General statistics of South America"
+    },
+    {
+        "id": 319,
+        "name": "General statistics of Australasia, Pacific Ocean islands, Atlantic Ocean islands, Arctic islands, Antarctica"
+    },
+    {
+        "id": 320,
+        "name": "Political science (Politics and government)"
+    },
+    {
+        "id": 321,
+        "name": "Systems of governments and states"
+    },
+    {
+        "id": 322,
+        "name": "Relation of state to organized groups and their members"
+    },
+    {
+        "id": 323,
+        "name": "Civil and political rights"
+    },
+    {
+        "id": 324,
+        "name": "The political process"
+    },
+    {
+        "id": 325,
+        "name": "International migration and colonization"
+    },
+    {
+        "id": 326,
+        "name": "Slavery and emancipation"
+    },
+    {
+        "id": 327,
+        "name": "International relations"
+    },
+    {
+        "id": 328,
+        "name": "The legislative process"
+    },
+    {
+        "id": 330,
+        "name": "Economics"
+    },
+    {
+        "id": 331,
+        "name": "Labor economics"
+    },
+    {
+        "id": 332,
+        "name": "Financial economics"
+    },
+    {
+        "id": 333,
+        "name": "Economics of land and energy"
+    },
+    {
+        "id": 334,
+        "name": "Cooperatives"
+    },
+    {
+        "id": 335,
+        "name": "Socialism and related systems"
+    },
+    {
+        "id": 336,
+        "name": "Public finance"
+    },
+    {
+        "id": 337,
+        "name": "International economics"
+    },
+    {
+        "id": 338,
+        "name": "Production"
+    },
+    {
+        "id": 339,
+        "name": "Macroeconomics and related topics"
+    },
+    {
+        "id": 340,
+        "name": "Law"
+    },
+    {
+        "id": 341,
+        "name": "Law of nations"
+    },
+    {
+        "id": 342,
+        "name": "Constitutional and administrative law"
+    },
+    {
+        "id": 343,
+        "name": "Military, defense, public property, public finance, tax, commerce (trade), industrial law"
+    },
+    {
+        "id": 344,
+        "name": "Labor, social service, education, cultural law"
+    },
+    {
+        "id": 345,
+        "name": "Criminal law"
+    },
+    {
+        "id": 346,
+        "name": "Private law"
+    },
+    {
+        "id": 347,
+        "name": "Procedure and courts"
+    },
+    {
+        "id": 348,
+        "name": "Laws, regulations, cases"
+    },
+    {
+        "id": 349,
+        "name": "Law of specific jurisdictions, areas, socioeconomic regions, regional intergovernmental organizations"
+    },
+    {
+        "id": 350,
+        "name": "Public administration and military science"
+    },
+    {
+        "id": 351,
+        "name": "Public administration"
+    },
+    {
+        "id": 352,
+        "name": "General considerations of public administration"
+    },
+    {
+        "id": 353,
+        "name": "Specific fields of public administration"
+    },
+    {
+        "id": 354,
+        "name": "Public administration of economy and environment"
+    },
+    {
+        "id": 355,
+        "name": "Military science"
+    },
+    {
+        "id": 356,
+        "name": "Foot forces and warfare"
+    },
+    {
+        "id": 357,
+        "name": "Mounted forces and warfare"
+    },
+    {
+        "id": 358,
+        "name": "Air and other specialized forces and warfare; engineering and related services"
+    },
+    {
+        "id": 359,
+        "name": "Sea forces and warfare"
+    },
+    {
+        "id": 360,
+        "name": "Social problems and services; associations"
+    },
+    {
+        "id": 361,
+        "name": "Social problems and services"
+    },
+    {
+        "id": 362,
+        "name": "Social problems of and services to groups of people"
+    },
+    {
+        "id": 363,
+        "name": "Other social problems and services"
+    },
+    {
+        "id": 364,
+        "name": "Criminology"
+    },
+    {
+        "id": 365,
+        "name": "Penal and related institutions"
+    },
+    {
+        "id": 366,
+        "name": "Secret associations and societies"
+    },
+    {
+        "id": 367,
+        "name": "General clubs"
+    },
+    {
+        "id": 368,
+        "name": "Insurance"
+    },
+    {
+        "id": 369,
+        "name": "Associations"
+    },
+    {
+        "id": 370,
+        "name": "Education"
+    },
+    {
+        "id": 371,
+        "name": "Schools and their activities, special education"
+    },
+    {
+        "id": 372,
+        "name": "Primary education (elementary education)"
+    },
+    {
+        "id": 373,
+        "name": "Secondary education"
+    },
+    {
+        "id": 374,
+        "name": "Adult education"
+    },
+    {
+        "id": 375,
+        "name": "Curriculum"
+    },
+    {
+        "id": 378,
+        "name": "Higher education (Tertiary education)"
+    },
+    {
+        "id": 379,
+        "name": "Public policy issues in education"
+    },
+    {
+        "id": 380,
+        "name": "Commerce, communications transportation"
+    },
+    {
+        "id": 381,
+        "name": "Commerce (Trade)"
+    },
+    {
+        "id": 382,
+        "name": "International commerce (Foreign trade)"
+    },
+    {
+        "id": 383,
+        "name": "Postal communication"
+    },
+    {
+        "id": 384,
+        "name": "Communications"
+    },
+    {
+        "id": 385,
+        "name": "Railroad transportation"
+    },
+    {
+        "id": 386,
+        "name": "Inland waterway and ferry transportation"
+    },
+    {
+        "id": 387,
+        "name": "Water, air, space transportation"
+    },
+    {
+        "id": 388,
+        "name": "Transportation"
+    },
+    {
+        "id": 389,
+        "name": "Metrology and standardization"
+    },
+    {
+        "id": 390,
+        "name": "Customs, etiquette, folklore"
+    },
+    {
+        "id": 391,
+        "name": "Costume and personal appearance"
+    },
+    {
+        "id": 392,
+        "name": "Customs of life cycle and domestic life"
+    },
+    {
+        "id": 393,
+        "name": "Death customs"
+    },
+    {
+        "id": 394,
+        "name": "General customs"
+    },
+    {
+        "id": 395,
+        "name": "Etiquette (Manners)"
+    },
+    {
+        "id": 398,
+        "name": "Folklore"
+    },
+    {
+        "id": 399,
+        "name": "Customs of war and diplomacy"
+    },
+    {
+        "id": 400,
+        "name": "Language"
+    },
+    {
+        "id": 401,
+        "name": "Philosophy and theory, international languages"
+    },
+    {
+        "id": 402,
+        "name": "Miscellany"
+    },
+    {
+        "id": 403,
+        "name": "Dictionaries, encyclopedias, concordances"
+    },
+    {
+        "id": 404,
+        "name": "Special topics of language"
+    },
+    {
+        "id": 405,
+        "name": "Serial publications"
+    },
+    {
+        "id": 406,
+        "name": "Organizations and management"
+    },
+    {
+        "id": 407,
+        "name": "Education, research, related topics"
+    },
+    {
+        "id": 408,
+        "name": "Groups of people"
+    },
+    {
+        "id": 409,
+        "name": "Geographic treatment and biography"
+    },
+    {
+        "id": 410,
+        "name": "Linguistics"
+    },
+    {
+        "id": 411,
+        "name": "Writing systems of standard forms of languages"
+    },
+    {
+        "id": 412,
+        "name": "Etymology of standard forms of languages"
+    },
+    {
+        "id": 413,
+        "name": "Dictionaries of standard forms of languages"
+    },
+    {
+        "id": 414,
+        "name": "Phonology and phonetics of standard forms of languages"
+    },
+    {
+        "id": 415,
+        "name": "Grammar of standard forms of languages"
+    },
+    {
+        "id": 417,
+        "name": "Dialectology and historical linguistics"
+    },
+    {
+        "id": 418,
+        "name": "Standard usage (Prescriptive linguistics)"
+    },
+    {
+        "id": 419,
+        "name": "Sign languages"
+    },
+    {
+        "id": 420,
+        "name": "English and Old English (Anglo-Saxon)"
+    },
+    {
+        "id": 421,
+        "name": "Writing system, phonology, phonetics of standard English"
+    },
+    {
+        "id": 422,
+        "name": "Etymology of standard English"
+    },
+    {
+        "id": 423,
+        "name": "Dictionaries of standard English"
+    },
+    {
+        "id": 425,
+        "name": "Grammar of standard English"
+    },
+    {
+        "id": 427,
+        "name": "Historical and geographical variations, modern nongeographic variations of English"
+    },
+    {
+        "id": 428,
+        "name": "Standard English usage (Prescriptive linguistics)"
+    },
+    {
+        "id": 429,
+        "name": "Old English (Anglo-Saxon)"
+    },
+    {
+        "id": 430,
+        "name": "German and related languages"
+    },
+    {
+        "id": 431,
+        "name": "Writing systems, phonology, phonetics of standard German"
+    },
+    {
+        "id": 432,
+        "name": "Etymology of standard German"
+    },
+    {
+        "id": 433,
+        "name": "Dictionaries of standard German"
+    },
+    {
+        "id": 435,
+        "name": "Grammar of standard German"
+    },
+    {
+        "id": 437,
+        "name": "Historical and geographic variations, modern nongeographic variations of German"
+    },
+    {
+        "id": 438,
+        "name": "Standard German usage (Prescriptive linguistics)"
+    },
+    {
+        "id": 439,
+        "name": "Other Germanic languages"
+    },
+    {
+        "id": 440,
+        "name": "French and related Romance languages"
+    },
+    {
+        "id": 441,
+        "name": "Writing systems, phonology, phonetics of standard French"
+    },
+    {
+        "id": 442,
+        "name": "Etymology of standard French"
+    },
+    {
+        "id": 443,
+        "name": "Dictionaries of standard French"
+    },
+    {
+        "id": 445,
+        "name": "Grammar of standard French"
+    },
+    {
+        "id": 447,
+        "name": "Historical and geographic variations, modern nongeographic variations of French"
+    },
+    {
+        "id": 448,
+        "name": "Standard French usage (Prescriptive linguistics)"
+    },
+    {
+        "id": 449,
+        "name": "Occitan Catalan, Franco-Proven\u00e7al"
+    },
+    {
+        "id": 450,
+        "name": "Italian, Dalmatian, Romanian, Rhaetian, Sardinian, Corsican"
+    },
+    {
+        "id": 451,
+        "name": "Writing systems, phonology, phonetics of standard Italian"
+    },
+    {
+        "id": 452,
+        "name": "Etymology of standard Italian"
+    },
+    {
+        "id": 453,
+        "name": "Dictionaries of standard Italian"
+    },
+    {
+        "id": 455,
+        "name": "Grammar of standard Italian"
+    },
+    {
+        "id": 457,
+        "name": "Historical and geographic variations, modern nongeographic variations of Italian"
+    },
+    {
+        "id": 458,
+        "name": "Standard Italian usage (Prescriptive linguistics)"
+    },
+    {
+        "id": 459,
+        "name": "Romanian, Rhaetian, Sardinian, Corsican"
+    },
+    {
+        "id": 460,
+        "name": "Spanish, Portuguese, Galician"
+    },
+    {
+        "id": 461,
+        "name": "Writing systems, phonology, phonetics of standard Spanish"
+    },
+    {
+        "id": 462,
+        "name": "Etymology of standard Spanish"
+    },
+    {
+        "id": 463,
+        "name": "Dictionaries of standard Spanish"
+    },
+    {
+        "id": 465,
+        "name": "Grammar of standard Spanish"
+    },
+    {
+        "id": 467,
+        "name": "Historical and geographic variations, modern nongeographic variations of Spanish"
+    },
+    {
+        "id": 468,
+        "name": "Standard Spanish usage (Prescriptive linguistics)"
+    },
+    {
+        "id": 469,
+        "name": "Portuguese"
+    },
+    {
+        "id": 470,
+        "name": "Latin and related Italic languages"
+    },
+    {
+        "id": 471,
+        "name": "Writing systems, phonology, phonetics of classical Latin"
+    },
+    {
+        "id": 472,
+        "name": "Etymology of classical Latin"
+    },
+    {
+        "id": 473,
+        "name": "Dictionaries of classical Latin"
+    },
+    {
+        "id": 475,
+        "name": "Grammar of classical Latin"
+    },
+    {
+        "id": 477,
+        "name": "Old, postclassical, Vulgar Latin"
+    },
+    {
+        "id": 478,
+        "name": "Classical Latin usage (Prescriptive linguistics)"
+    },
+    {
+        "id": 479,
+        "name": "Other Italic languages"
+    },
+    {
+        "id": 480,
+        "name": "Classical Greek and related Hellenic languages"
+    },
+    {
+        "id": 481,
+        "name": "Writing systems, phonology, phonetics of classical Greek"
+    },
+    {
+        "id": 482,
+        "name": "Etymology of classical Greek"
+    },
+    {
+        "id": 483,
+        "name": "Dictionaries of classical Greek"
+    },
+    {
+        "id": 485,
+        "name": "Grammar of classical Greek"
+    },
+    {
+        "id": 487,
+        "name": "Preclassical and postclassical Greek"
+    },
+    {
+        "id": 488,
+        "name": "Classical Greek usage (Prescriptive linguistics)"
+    },
+    {
+        "id": 489,
+        "name": "Other Hellenic languages"
+    },
+    {
+        "id": 490,
+        "name": "Other languages"
+    },
+    {
+        "id": 491,
+        "name": "East Indo-European and Celtic languages"
+    },
+    {
+        "id": 492,
+        "name": "Afro-Asiatic languages"
+    },
+    {
+        "id": 493,
+        "name": "Non-Semitic Afro-Asiatic languages"
+    },
+    {
+        "id": 494,
+        "name": "Altaic, Uralic, Hyperborean, Dravidian languages, miscellaneous languages of south Asia"
+    },
+    {
+        "id": 495,
+        "name": "Languages of East and Southeast Asia"
+    },
+    {
+        "id": 496,
+        "name": "African languages"
+    },
+    {
+        "id": 497,
+        "name": "North American native languages"
+    },
+    {
+        "id": 498,
+        "name": "South American native languages"
+    },
+    {
+        "id": 499,
+        "name": "Non-Austronesian languages of Oceania, Austronesian languages, miscellaneous languages"
+    },
+    {
+        "id": 500,
+        "name": "Natural sciences and mathematics"
+    },
+    {
+        "id": 501,
+        "name": "Philosophy and theory"
+    },
+    {
+        "id": 502,
+        "name": "Miscellany"
+    },
+    {
+        "id": 503,
+        "name": "Dictionaries, encyclopedias, concordances"
+    },
+    {
+        "id": 505,
+        "name": "Serial publications"
+    },
+    {
+        "id": 506,
+        "name": "Organizations and management"
+    },
+    {
+        "id": 507,
+        "name": "Education, research, related topics"
+    },
+    {
+        "id": 508,
+        "name": "Natural history"
+    },
+    {
+        "id": 509,
+        "name": "History, geographic treatment, biography"
+    },
+    {
+        "id": 510,
+        "name": "Mathematics"
+    },
+    {
+        "id": 511,
+        "name": "General principles of mathematics"
+    },
+    {
+        "id": 512,
+        "name": "Algebra"
+    },
+    {
+        "id": 513,
+        "name": "Arithmetic"
+    },
+    {
+        "id": 514,
+        "name": "Topology"
+    },
+    {
+        "id": 515,
+        "name": "Analysis"
+    },
+    {
+        "id": 516,
+        "name": "Geometry"
+    },
+    {
+        "id": 518,
+        "name": "Numerical analysis"
+    },
+    {
+        "id": 519,
+        "name": "Probabilities and applied mathematics"
+    },
+    {
+        "id": 520,
+        "name": "Astronomy and allied sciences"
+    },
+    {
+        "id": 521,
+        "name": "Celestial mechanics"
+    },
+    {
+        "id": 522,
+        "name": "Techniques, procedures, apparatus, equipment, materials"
+    },
+    {
+        "id": 523,
+        "name": "Specific celestial bodies and phenomena"
+    },
+    {
+        "id": 525,
+        "name": "Earth (Astronomical geography)"
+    },
+    {
+        "id": 526,
+        "name": "Mathematical geography"
+    },
+    {
+        "id": 527,
+        "name": "Celestial navigation"
+    },
+    {
+        "id": 528,
+        "name": "Ephemerides"
+    },
+    {
+        "id": 529,
+        "name": "Chronology"
+    },
+    {
+        "id": 530,
+        "name": "Physics"
+    },
+    {
+        "id": 531,
+        "name": "Classical mechanics"
+    },
+    {
+        "id": 532,
+        "name": "Fluid mechanics"
+    },
+    {
+        "id": 533,
+        "name": "Pneumatics (Gas mechanics)"
+    },
+    {
+        "id": 534,
+        "name": "Sound and related vibrations"
+    },
+    {
+        "id": 535,
+        "name": "Light and related radiation"
+    },
+    {
+        "id": 536,
+        "name": "Heat"
+    },
+    {
+        "id": 537,
+        "name": "Electricity and electronics"
+    },
+    {
+        "id": 538,
+        "name": "Magnetism"
+    },
+    {
+        "id": 539,
+        "name": "Modern physics"
+    },
+    {
+        "id": 540,
+        "name": "Chemistry and allied sciences"
+    },
+    {
+        "id": 541,
+        "name": "Physical chemistry"
+    },
+    {
+        "id": 542,
+        "name": "Techniques, procedures, apparatus, equipment, materials"
+    },
+    {
+        "id": 543,
+        "name": "Analytical chemistry"
+    },
+    {
+        "id": 546,
+        "name": "Inorganic chemistry"
+    },
+    {
+        "id": 547,
+        "name": "Organic chemistry"
+    },
+    {
+        "id": 548,
+        "name": "Crystallography"
+    },
+    {
+        "id": 549,
+        "name": "Mineralogy"
+    },
+    {
+        "id": 550,
+        "name": "Earth sciences"
+    },
+    {
+        "id": 551,
+        "name": "Geology, hydrology, meteorology"
+    },
+    {
+        "id": 552,
+        "name": "Petrology"
+    },
+    {
+        "id": 553,
+        "name": "Economic geology"
+    },
+    {
+        "id": 554,
+        "name": "Earth sciences of Europe"
+    },
+    {
+        "id": 555,
+        "name": "Earth sciences of Asia"
+    },
+    {
+        "id": 556,
+        "name": "Earth sciences of Africa"
+    },
+    {
+        "id": 557,
+        "name": "Earth sciences of North America"
+    },
+    {
+        "id": 558,
+        "name": "Earth sciences of South America"
+    },
+    {
+        "id": 559,
+        "name": "Earth sciences of Australasia, Pacific Ocean islands, Atlantic Ocean islands, Arctic islands, Antarctica, extraterrestrial worlds"
+    },
+    {
+        "id": 560,
+        "name": "Paleontology"
+    },
+    {
+        "id": 561,
+        "name": "Paleobotany, fossil microorganisms"
+    },
+    {
+        "id": 562,
+        "name": "Fossil invertebrates"
+    },
+    {
+        "id": 563,
+        "name": "Miscellaneous fossil marine and seashore invertebrates"
+    },
+    {
+        "id": 564,
+        "name": "Fossil Mollusca and Molluscoidea"
+    },
+    {
+        "id": 565,
+        "name": "Fossil Arthropoda"
+    },
+    {
+        "id": 566,
+        "name": "Fossil Chordata"
+    },
+    {
+        "id": 567,
+        "name": "Fossil cold-blooded vertebrates"
+    },
+    {
+        "id": 568,
+        "name": "Fossil Aves (birds)"
+    },
+    {
+        "id": 569,
+        "name": "Fossil Mammalia"
+    },
+    {
+        "id": 570,
+        "name": "Biology"
+    },
+    {
+        "id": 571,
+        "name": "Physiology and related subjects"
+    },
+    {
+        "id": 572,
+        "name": "Biochemistry"
+    },
+    {
+        "id": 573,
+        "name": "Specific physiological systems in animals, regional histology and physiology in animals"
+    },
+    {
+        "id": 575,
+        "name": "Specific parts of and physiological systems in plants"
+    },
+    {
+        "id": 576,
+        "name": "Genetics and evolution"
+    },
+    {
+        "id": 577,
+        "name": "Ecology"
+    },
+    {
+        "id": 578,
+        "name": "Natural history of organisms and related subjects"
+    },
+    {
+        "id": 579,
+        "name": "Natural history of microorganisms, fungi, algae"
+    },
+    {
+        "id": 580,
+        "name": "Plants"
+    },
+    {
+        "id": 581,
+        "name": "Specific topics in natural history of plants"
+    },
+    {
+        "id": 582,
+        "name": "Plants noted for specific vegetative characteristics and flowers"
+    },
+    {
+        "id": 583,
+        "name": "Magnoliopsida (Dicotyledones)"
+    },
+    {
+        "id": 584,
+        "name": "Liliopsida (Monocotyledones)"
+    },
+    {
+        "id": 585,
+        "name": "Pinophyta (Gymnosperms)"
+    },
+    {
+        "id": 586,
+        "name": "Cryptogamia (Seedless plants)"
+    },
+    {
+        "id": 587,
+        "name": "Pteridophyta"
+    },
+    {
+        "id": 588,
+        "name": "Bryophyta"
+    },
+    {
+        "id": 590,
+        "name": "Animals"
+    },
+    {
+        "id": 591,
+        "name": "Specific topics in natural history of animals"
+    },
+    {
+        "id": 592,
+        "name": "Invertebrates"
+    },
+    {
+        "id": 593,
+        "name": "Miscellaneous marine and seashore invertebrates"
+    },
+    {
+        "id": 594,
+        "name": "Mollusca and Molluscoidea"
+    },
+    {
+        "id": 595,
+        "name": "Arthropoda"
+    },
+    {
+        "id": 596,
+        "name": "Chordata"
+    },
+    {
+        "id": 597,
+        "name": "Cold-blooded vertebrates"
+    },
+    {
+        "id": 598,
+        "name": "Aves (Birds)"
+    },
+    {
+        "id": 599,
+        "name": "Mammalia (Mammals)"
+    },
+    {
+        "id": 600,
+        "name": "Technology (Applied sciences)"
+    },
+    {
+        "id": 601,
+        "name": "Philosophy and theory"
+    },
+    {
+        "id": 602,
+        "name": "Miscellany"
+    },
+    {
+        "id": 603,
+        "name": "Dictionaries, encyclopedias, concordances"
+    },
+    {
+        "id": 604,
+        "name": "Technical drawing, hazardous materials technology; groups of people"
+    },
+    {
+        "id": 605,
+        "name": "Serial publications"
+    },
+    {
+        "id": 606,
+        "name": "Organizations"
+    },
+    {
+        "id": 607,
+        "name": "Education, research, related topics"
+    },
+    {
+        "id": 608,
+        "name": "Patents"
+    },
+    {
+        "id": 609,
+        "name": "History, geographic treatment, biography"
+    },
+    {
+        "id": 610,
+        "name": "Medicine and health"
+    },
+    {
+        "id": 611,
+        "name": "Human anatomy, cytology, histology"
+    },
+    {
+        "id": 612,
+        "name": "Human physiology"
+    },
+    {
+        "id": 613,
+        "name": "Personal health and safety"
+    },
+    {
+        "id": 614,
+        "name": "Forensic medicine; incidence of injuries, wounds, disease; public preventive medicine"
+    },
+    {
+        "id": 615,
+        "name": "Pharmacology and therapeutics"
+    },
+    {
+        "id": 616,
+        "name": "Diseases"
+    },
+    {
+        "id": 617,
+        "name": "Surgery, regional medicine, dentistry, ophthalmology, otology, audiology"
+    },
+    {
+        "id": 618,
+        "name": "Gynecology, obstetrics, pediatrics, geriatrics"
+    },
+    {
+        "id": 620,
+        "name": "Engineering and applied operations"
+    },
+    {
+        "id": 621,
+        "name": "Applied physics"
+    },
+    {
+        "id": 622,
+        "name": "Mining and related operations"
+    },
+    {
+        "id": 623,
+        "name": "Military and nautical engineering"
+    },
+    {
+        "id": 624,
+        "name": "Civil engineering"
+    },
+    {
+        "id": 625,
+        "name": "Engineering of railroads, roads"
+    },
+    {
+        "id": 627,
+        "name": "Hydraulic engineering"
+    },
+    {
+        "id": 628,
+        "name": "Sanitary engineering"
+    },
+    {
+        "id": 629,
+        "name": "Other branches of engineering"
+    },
+    {
+        "id": 630,
+        "name": "Agriculture and related technologies"
+    },
+    {
+        "id": 631,
+        "name": "Specific techniques; apparatus, equipment, materials"
+    },
+    {
+        "id": 632,
+        "name": "Plant injuries, diseases, pests"
+    },
+    {
+        "id": 633,
+        "name": "Field and plantation crops"
+    },
+    {
+        "id": 634,
+        "name": "Orchards, fruits, forestry"
+    },
+    {
+        "id": 635,
+        "name": "Garden crops (Horticulture)"
+    },
+    {
+        "id": 636,
+        "name": "Animal husbandry"
+    },
+    {
+        "id": 637,
+        "name": "Processing dairy and related products"
+    },
+    {
+        "id": 638,
+        "name": "Insect culture"
+    },
+    {
+        "id": 639,
+        "name": "Hunting, fishing, conservation, related technologies"
+    },
+    {
+        "id": 640,
+        "name": "Home and family management"
+    },
+    {
+        "id": 641,
+        "name": "Food and drink"
+    },
+    {
+        "id": 642,
+        "name": "Meals and table service"
+    },
+    {
+        "id": 643,
+        "name": "Housing and household equipment"
+    },
+    {
+        "id": 644,
+        "name": "Household utilities"
+    },
+    {
+        "id": 645,
+        "name": "Household furnishings"
+    },
+    {
+        "id": 646,
+        "name": "Sewing, clothing, management of personal and family life"
+    },
+    {
+        "id": 647,
+        "name": "Management of public households (Institutional housekeeping)"
+    },
+    {
+        "id": 648,
+        "name": "Housekeeping"
+    },
+    {
+        "id": 649,
+        "name": "Child rearing; home care of people with disabilities and illnesses"
+    },
+    {
+        "id": 650,
+        "name": "Management and auxiliary services"
+    },
+    {
+        "id": 651,
+        "name": "Office services"
+    },
+    {
+        "id": 652,
+        "name": "Processes of written communication"
+    },
+    {
+        "id": 653,
+        "name": "Shorthand"
+    },
+    {
+        "id": 657,
+        "name": "Accounting"
+    },
+    {
+        "id": 658,
+        "name": "General management"
+    },
+    {
+        "id": 659,
+        "name": "Advertising and public relations"
+    },
+    {
+        "id": 660,
+        "name": "Chemical engineering and related technologies"
+    },
+    {
+        "id": 661,
+        "name": "Technology of industrial chemicals"
+    },
+    {
+        "id": 662,
+        "name": "Technology of explosives, fuels, related products"
+    },
+    {
+        "id": 663,
+        "name": "Beverage technology"
+    },
+    {
+        "id": 664,
+        "name": "Food technology"
+    },
+    {
+        "id": 665,
+        "name": "Technology of industrial oils, fats, waxes, gases"
+    },
+    {
+        "id": 666,
+        "name": "Ceramic and allied technologies"
+    },
+    {
+        "id": 667,
+        "name": "Cleaning, color, coating, related technologies"
+    },
+    {
+        "id": 668,
+        "name": "Technology of other organic products"
+    },
+    {
+        "id": 669,
+        "name": "Metallurgy"
+    },
+    {
+        "id": 670,
+        "name": "Manufacturing"
+    },
+    {
+        "id": 671,
+        "name": "Metalworking processes and primary metal products"
+    },
+    {
+        "id": 672,
+        "name": "Iron, steel, other iron alloys"
+    },
+    {
+        "id": 673,
+        "name": "Nonferrous metals"
+    },
+    {
+        "id": 674,
+        "name": "Lumber processing, wood products, cork"
+    },
+    {
+        "id": 675,
+        "name": "Leather and fur processing"
+    },
+    {
+        "id": 676,
+        "name": "Pulp and paper technology"
+    },
+    {
+        "id": 677,
+        "name": "Textiles"
+    },
+    {
+        "id": 678,
+        "name": "Elastomers and elastomer products"
+    },
+    {
+        "id": 679,
+        "name": "Other products of specific kinds of materials"
+    },
+    {
+        "id": 680,
+        "name": "Manufacture of products for specific uses"
+    },
+    {
+        "id": 681,
+        "name": "Precision instruments and other devices"
+    },
+    {
+        "id": 682,
+        "name": "Small forge work (Blacksmithing)"
+    },
+    {
+        "id": 683,
+        "name": "Hardware and household appliances"
+    },
+    {
+        "id": 684,
+        "name": "Furnishings and home workshops"
+    },
+    {
+        "id": 685,
+        "name": "Leather and fur goods, and related products"
+    },
+    {
+        "id": 686,
+        "name": "Printing and related activities"
+    },
+    {
+        "id": 687,
+        "name": "Clothing and accessories"
+    },
+    {
+        "id": 688,
+        "name": "Other final products, and packaging technology"
+    },
+    {
+        "id": 690,
+        "name": "Construction of buildings"
+    },
+    {
+        "id": 691,
+        "name": "Building materials"
+    },
+    {
+        "id": 692,
+        "name": "Auxiliary construction practices"
+    },
+    {
+        "id": 693,
+        "name": "Construction in specific types of materials and for specific purposes"
+    },
+    {
+        "id": 694,
+        "name": "Wood construction"
+    },
+    {
+        "id": 695,
+        "name": "Roof covering"
+    },
+    {
+        "id": 696,
+        "name": "Utilities"
+    },
+    {
+        "id": 697,
+        "name": "Heating, ventilating, air-conditioning engineering"
+    },
+    {
+        "id": 698,
+        "name": "Detail finishing"
+    },
+    {
+        "id": 700,
+        "name": "The Arts"
+    },
+    {
+        "id": 701,
+        "name": "Philosophy and theory of fine and decorative arts"
+    },
+    {
+        "id": 702,
+        "name": "Miscellany of fine and decorative arts"
+    },
+    {
+        "id": 703,
+        "name": "Dictionaries, encyclopedias, concordances of fine and decorative arts"
+    },
+    {
+        "id": 704,
+        "name": "Special topics in fine and decorative arts"
+    },
+    {
+        "id": 705,
+        "name": "Serial publications of fine and decorative arts"
+    },
+    {
+        "id": 706,
+        "name": "Organizations and management of fine and decorative arts"
+    },
+    {
+        "id": 707,
+        "name": "Education, research, related topics of fine and decorative arts"
+    },
+    {
+        "id": 708,
+        "name": "Galleries, museums, private collections of fine and decorative arts"
+    },
+    {
+        "id": 709,
+        "name": "History, geographic treatment, biography"
+    },
+    {
+        "id": 710,
+        "name": "Area planning and landscape architecture"
+    },
+    {
+        "id": 711,
+        "name": "Area planning (Civic art)"
+    },
+    {
+        "id": 712,
+        "name": "Landscape architecture (Landscape design)"
+    },
+    {
+        "id": 713,
+        "name": "Landscape architecture of trafficways"
+    },
+    {
+        "id": 714,
+        "name": "Water features in landscape architecture"
+    },
+    {
+        "id": 715,
+        "name": "Woody plants in landscape architecture"
+    },
+    {
+        "id": 716,
+        "name": "Herbaceous plants in landscape architecture"
+    },
+    {
+        "id": 717,
+        "name": "Structures in landscape architecture"
+    },
+    {
+        "id": 718,
+        "name": "Landscape design of cemeteries"
+    },
+    {
+        "id": 719,
+        "name": "Natural landscapes"
+    },
+    {
+        "id": 720,
+        "name": "Architecture"
+    },
+    {
+        "id": 721,
+        "name": "Architectural materials and structural elements"
+    },
+    {
+        "id": 722,
+        "name": "Architecture from earliest times to c.300"
+    },
+    {
+        "id": 723,
+        "name": "Architecture from c.300 to 1399"
+    },
+    {
+        "id": 724,
+        "name": "Architecture from 1400"
+    },
+    {
+        "id": 725,
+        "name": "Public structures"
+    },
+    {
+        "id": 726,
+        "name": "Buildings for religious and related purposes"
+    },
+    {
+        "id": 727,
+        "name": "Buildings for educational and research purposes"
+    },
+    {
+        "id": 728,
+        "name": "Residential and related buildings"
+    },
+    {
+        "id": 729,
+        "name": "Design and decoration of structures and accessories"
+    },
+    {
+        "id": 730,
+        "name": "Sculpture and related arts"
+    },
+    {
+        "id": 731,
+        "name": "Processes, forms, subjects of sculpture"
+    },
+    {
+        "id": 732,
+        "name": "Sculpture from earliest times to c.500, sculpture of non-literate peoples"
+    },
+    {
+        "id": 733,
+        "name": "Greek, Etruscan, Roman sculpture"
+    },
+    {
+        "id": 734,
+        "name": "Sculpture from ca 500 to 1399"
+    },
+    {
+        "id": 735,
+        "name": "Sculpture from 1400"
+    },
+    {
+        "id": 736,
+        "name": "Carving and carvings"
+    },
+    {
+        "id": 737,
+        "name": "Numismatics and sigillography"
+    },
+    {
+        "id": 738,
+        "name": "Ceramic arts"
+    },
+    {
+        "id": 739,
+        "name": "Art metalwork"
+    },
+    {
+        "id": 740,
+        "name": "Graphic arts"
+    },
+    {
+        "id": 741,
+        "name": "Drawing and drawings"
+    },
+    {
+        "id": 742,
+        "name": "Perspective in drawing"
+    },
+    {
+        "id": 743,
+        "name": "Drawing and drawings by subject"
+    },
+    {
+        "id": 744,
+        "name": "Communication design and visual design (proposed[5])"
+    },
+    {
+        "id": 745,
+        "name": "Decorative arts"
+    },
+    {
+        "id": 746,
+        "name": "Textile arts"
+    },
+    {
+        "id": 747,
+        "name": "Interior decoration"
+    },
+    {
+        "id": 748,
+        "name": "Glass"
+    },
+    {
+        "id": 749,
+        "name": "Furniture and accessories"
+    },
+    {
+        "id": 750,
+        "name": "Painting and paintings"
+    },
+    {
+        "id": 751,
+        "name": "Techniques, procedures, apparatus, equipment, materials, forms"
+    },
+    {
+        "id": 752,
+        "name": "Color"
+    },
+    {
+        "id": 753,
+        "name": "Symbolism, allegory, mythology, legend"
+    },
+    {
+        "id": 754,
+        "name": "Genre paintings"
+    },
+    {
+        "id": 755,
+        "name": "Religion"
+    },
+    {
+        "id": 757,
+        "name": "Human figures"
+    },
+    {
+        "id": 758,
+        "name": "Nature, architectural subjects and cityscapes, other specific subjects"
+    },
+    {
+        "id": 759,
+        "name": "History, geographic treatment, biography"
+    },
+    {
+        "id": 760,
+        "name": "Printmaking and prints"
+    },
+    {
+        "id": 761,
+        "name": "Relief processes (Block printing)"
+    },
+    {
+        "id": 763,
+        "name": "Lithographic processes (Planographic processes)"
+    },
+    {
+        "id": 764,
+        "name": "Chromolithography and serigraphy"
+    },
+    {
+        "id": 765,
+        "name": "Metal engraving"
+    },
+    {
+        "id": 766,
+        "name": "Mezzotinting, aquatinting, and related processes"
+    },
+    {
+        "id": 767,
+        "name": "Etching and drypoint"
+    },
+    {
+        "id": 769,
+        "name": "Prints"
+    },
+    {
+        "id": 770,
+        "name": "Photography, computer art, cinematography, videography"
+    },
+    {
+        "id": 771,
+        "name": "Techniques, procedures, apparatus, equipment, materials"
+    },
+    {
+        "id": 772,
+        "name": "Metallic salt processes"
+    },
+    {
+        "id": 773,
+        "name": "Pigment processes of printing"
+    },
+    {
+        "id": 776,
+        "name": "Computer art (Digital art)"
+    },
+    {
+        "id": 777,
+        "name": "Cinematography and Videography"
+    },
+    {
+        "id": 778,
+        "name": "Specific fields and special kinds of photography"
+    },
+    {
+        "id": 779,
+        "name": "Photographic images"
+    },
+    {
+        "id": 780,
+        "name": "Music"
+    },
+    {
+        "id": 781,
+        "name": "General principles and musical forms"
+    },
+    {
+        "id": 782,
+        "name": "Vocal music"
+    },
+    {
+        "id": 783,
+        "name": "Music for single voices"
+    },
+    {
+        "id": 784,
+        "name": "Instruments and Instrumental ensembles and their music"
+    },
+    {
+        "id": 785,
+        "name": "Ensembles with only one instrument per part"
+    },
+    {
+        "id": 786,
+        "name": "Keyboard, mechanical, electrophonic, percussion instruments"
+    },
+    {
+        "id": 787,
+        "name": "Stringed instruments (Chordophones)"
+    },
+    {
+        "id": 788,
+        "name": "Wind instruments (Aerophones)"
+    },
+    {
+        "id": 790,
+        "name": "Recreational and performing arts"
+    },
+    {
+        "id": 791,
+        "name": "Public performances"
+    },
+    {
+        "id": 792,
+        "name": "Stage presentations"
+    },
+    {
+        "id": 793,
+        "name": "Indoor games and amusements"
+    },
+    {
+        "id": 794,
+        "name": "Indoor games of skill"
+    },
+    {
+        "id": 795,
+        "name": "Games of chance"
+    },
+    {
+        "id": 796,
+        "name": "Athletic and outdoor sports and games"
+    },
+    {
+        "id": 797,
+        "name": "Aquatic and air sports"
+    },
+    {
+        "id": 798,
+        "name": "Equestrian sports and animal racing"
+    },
+    {
+        "id": 799,
+        "name": "Fishing, hunting, shooting"
+    },
+    {
+        "id": 800,
+        "name": "Literature (Belles-lettres) and rhetoric"
+    },
+    {
+        "id": 801,
+        "name": "Philosophy and theory"
+    },
+    {
+        "id": 802,
+        "name": "Miscellany"
+    },
+    {
+        "id": 803,
+        "name": "Dictionaries, encyclopedias, concordances"
+    },
+    {
+        "id": 805,
+        "name": "Serial publications"
+    },
+    {
+        "id": 806,
+        "name": "Organizations and management"
+    },
+    {
+        "id": 807,
+        "name": "Education, research, related topics"
+    },
+    {
+        "id": 808,
+        "name": "Rhetoric and collections of literary texts from more than two literatures"
+    },
+    {
+        "id": 809,
+        "name": "History, description, critical appraisal of more than two literatures"
+    },
+    {
+        "id": 810,
+        "name": "American literature in English"
+    },
+    {
+        "id": 811,
+        "name": "American poetry in English"
+    },
+    {
+        "id": 812,
+        "name": "American drama in English"
+    },
+    {
+        "id": 813,
+        "name": "American fiction in English"
+    },
+    {
+        "id": 814,
+        "name": "American essays in English"
+    },
+    {
+        "id": 815,
+        "name": "American speeches in English"
+    },
+    {
+        "id": 816,
+        "name": "American letters in English"
+    },
+    {
+        "id": 817,
+        "name": "American humor and satire in English"
+    },
+    {
+        "id": 818,
+        "name": "American miscellaneous writings in English"
+    },
+    {
+        "id": 820,
+        "name": "English and Old English (Anglo-Saxon) literatures"
+    },
+    {
+        "id": 821,
+        "name": "English Poetry"
+    },
+    {
+        "id": 822,
+        "name": "English drama"
+    },
+    {
+        "id": 823,
+        "name": "English fiction"
+    },
+    {
+        "id": 824,
+        "name": "English essays"
+    },
+    {
+        "id": 825,
+        "name": "English speeches"
+    },
+    {
+        "id": 826,
+        "name": "English letters"
+    },
+    {
+        "id": 827,
+        "name": "English humor and satire"
+    },
+    {
+        "id": 828,
+        "name": "English miscellaneous writings"
+    },
+    {
+        "id": 829,
+        "name": "Old English (Anglo-Saxon) literature"
+    },
+    {
+        "id": 830,
+        "name": "German literature and literatures of related languages"
+    },
+    {
+        "id": 831,
+        "name": "German poetry"
+    },
+    {
+        "id": 832,
+        "name": "German drama"
+    },
+    {
+        "id": 833,
+        "name": "German fiction"
+    },
+    {
+        "id": 834,
+        "name": "German essays"
+    },
+    {
+        "id": 835,
+        "name": "German speeches"
+    },
+    {
+        "id": 836,
+        "name": "German letters"
+    },
+    {
+        "id": 837,
+        "name": "German humor and satire"
+    },
+    {
+        "id": 838,
+        "name": "German miscellaneous writings"
+    },
+    {
+        "id": 839,
+        "name": "Other Germanic literatures"
+    },
+    {
+        "id": 840,
+        "name": "French literature and literatures of related Romance languages"
+    },
+    {
+        "id": 841,
+        "name": "French poetry"
+    },
+    {
+        "id": 842,
+        "name": "French drama"
+    },
+    {
+        "id": 843,
+        "name": "French fiction"
+    },
+    {
+        "id": 844,
+        "name": "French essays"
+    },
+    {
+        "id": 845,
+        "name": "French speeches"
+    },
+    {
+        "id": 846,
+        "name": "French letters"
+    },
+    {
+        "id": 847,
+        "name": "French humor and satire"
+    },
+    {
+        "id": 848,
+        "name": "French miscellaneous writings"
+    },
+    {
+        "id": 849,
+        "name": "Occitan, Catalan, Franco-Proven\u00e7al literatures"
+    },
+    {
+        "id": 850,
+        "name": "Literatures of Italian, Dalmatian, Romanian, Rhaetian, Sardinian, Corsican languages"
+    },
+    {
+        "id": 851,
+        "name": "Italian poetry"
+    },
+    {
+        "id": 852,
+        "name": "Italian drama"
+    },
+    {
+        "id": 853,
+        "name": "Italian fiction"
+    },
+    {
+        "id": 854,
+        "name": "Italian essays"
+    },
+    {
+        "id": 855,
+        "name": "Italian speeches"
+    },
+    {
+        "id": 856,
+        "name": "Italian letters"
+    },
+    {
+        "id": 857,
+        "name": "Italian humor and satire"
+    },
+    {
+        "id": 858,
+        "name": "Italian miscellaneous writings"
+    },
+    {
+        "id": 859,
+        "name": "Literatures of Romanian, Rhaetian, Sardinian, Corsican languages"
+    },
+    {
+        "id": 860,
+        "name": "Literatures of Spanish, Portuguese, Galician languages"
+    },
+    {
+        "id": 861,
+        "name": "Spanish poetry"
+    },
+    {
+        "id": 862,
+        "name": "Spanish drama"
+    },
+    {
+        "id": 863,
+        "name": "Spanish fiction"
+    },
+    {
+        "id": 864,
+        "name": "Spanish essays"
+    },
+    {
+        "id": 865,
+        "name": "Spanish speeches"
+    },
+    {
+        "id": 866,
+        "name": "Spanish letters"
+    },
+    {
+        "id": 867,
+        "name": "Spanish humor and satire"
+    },
+    {
+        "id": 868,
+        "name": "Spanish miscellaneous writings"
+    },
+    {
+        "id": 869,
+        "name": "Literatures of Portuguese and Galician languages"
+    },
+    {
+        "id": 870,
+        "name": "Latin literature and literatures of related Italic languages"
+    },
+    {
+        "id": 871,
+        "name": "Latin poetry"
+    },
+    {
+        "id": 872,
+        "name": "Latin dramatic poetry and drama"
+    },
+    {
+        "id": 873,
+        "name": "Latin epic poetry and fiction"
+    },
+    {
+        "id": 874,
+        "name": "Latin lyric poetry"
+    },
+    {
+        "id": 875,
+        "name": "Latin speeches"
+    },
+    {
+        "id": 876,
+        "name": "Latin letters"
+    },
+    {
+        "id": 877,
+        "name": "Latin humor and satire"
+    },
+    {
+        "id": 878,
+        "name": "Latin miscellaneous writings"
+    },
+    {
+        "id": 879,
+        "name": "Literatures of other Italic languages"
+    },
+    {
+        "id": 880,
+        "name": "Classical Greek literature and literatures of related Hellenic languages"
+    },
+    {
+        "id": 881,
+        "name": "Classical Greek poetry"
+    },
+    {
+        "id": 882,
+        "name": "Classical Greek drama"
+    },
+    {
+        "id": 883,
+        "name": "Classical Greek epic poetry and fiction"
+    },
+    {
+        "id": 884,
+        "name": "Classical Greek lyric poetry"
+    },
+    {
+        "id": 885,
+        "name": "Classical Greek speeches"
+    },
+    {
+        "id": 886,
+        "name": "Classical Greek letters"
+    },
+    {
+        "id": 887,
+        "name": "Classical Greek humor and satire"
+    },
+    {
+        "id": 888,
+        "name": "Classical Greek miscellaneous writings"
+    },
+    {
+        "id": 889,
+        "name": "Modern Greek literature"
+    },
+    {
+        "id": 890,
+        "name": "Literatures of other specific languages and language families"
+    },
+    {
+        "id": 891,
+        "name": "East Indo-European and Celtic literatures"
+    },
+    {
+        "id": 892,
+        "name": "Afro-Asiatic literatures"
+    },
+    {
+        "id": 893,
+        "name": "Non-Semitic Afro-Asiatic literatures"
+    },
+    {
+        "id": 894,
+        "name": "Literatures of Altaic, Uralic, Hyperborean, Dravidian languages; literatures of miscellaneous languages of South Asia"
+    },
+    {
+        "id": 895,
+        "name": "Literatures of East and Southeast Asia"
+    },
+    {
+        "id": 896,
+        "name": "African literatures"
+    },
+    {
+        "id": 897,
+        "name": "Literatures of North American native languages"
+    },
+    {
+        "id": 898,
+        "name": "Literatures of South American native languages"
+    },
+    {
+        "id": 899,
+        "name": "Literatures of non-Austronesian languages of Oceania, of Austronesian languages, of miscellaneous languages"
+    },
+    {
+        "id": 900,
+        "name": "History, geography, and auxiliary disciplines"
+    },
+    {
+        "id": 901,
+        "name": "Philosophy and theory of history"
+    },
+    {
+        "id": 902,
+        "name": "Miscellany of history"
+    },
+    {
+        "id": 903,
+        "name": "Dictionaries, encyclopedias, concordances of history"
+    },
+    {
+        "id": 904,
+        "name": "Collected accounts of events"
+    },
+    {
+        "id": 905,
+        "name": "Serial publications of history"
+    },
+    {
+        "id": 906,
+        "name": "Organizations and management of history"
+    },
+    {
+        "id": 907,
+        "name": "Education, research, related topics of history"
+    },
+    {
+        "id": 908,
+        "name": "History with respect to groups of people"
+    },
+    {
+        "id": 909,
+        "name": "World history"
+    },
+    {
+        "id": 910,
+        "name": "Geography and travel"
+    },
+    {
+        "id": 911,
+        "name": "Historical geography"
+    },
+    {
+        "id": 912,
+        "name": "Graphic representations of surface of Earth and of extraterrestrial worlds"
+    },
+    {
+        "id": 913,
+        "name": "Geography of and travel in the ancient world"
+    },
+    {
+        "id": 914,
+        "name": "Geography of and travel in Europe"
+    },
+    {
+        "id": 915,
+        "name": "Geography of and travel in Asia"
+    },
+    {
+        "id": 916,
+        "name": "Geography of and travel in Africa"
+    },
+    {
+        "id": 917,
+        "name": "Geography of and travel in North America"
+    },
+    {
+        "id": 918,
+        "name": "Geography of and travel in South America"
+    },
+    {
+        "id": 919,
+        "name": "Geography of and travel in Australasia, Pacific Ocean islands, Atlantic Ocean islands, Arctic islands, Antarctica, and on extraterrestrial worlds"
+    },
+    {
+        "id": 920,
+        "name": "Biography, genealogy, insignia"
+    },
+    {
+        "id": 921,
+        "name": "928 This range is reserved as an optional location for biographies, which are shelved alphabetically by subject's last name."
+    },
+    {
+        "id": 929,
+        "name": "Genealogy, names, insignia"
+    },
+    {
+        "id": 930,
+        "name": "History of ancient world to c.499"
+    },
+    {
+        "id": 931,
+        "name": "China to 420"
+    },
+    {
+        "id": 932,
+        "name": "Egypt to 640"
+    },
+    {
+        "id": 933,
+        "name": "Palestine to 70"
+    },
+    {
+        "id": 934,
+        "name": "South Asia to 647"
+    },
+    {
+        "id": 935,
+        "name": "Mesopotamia and Iranian Plateau to 637"
+    },
+    {
+        "id": 936,
+        "name": "Europe north and west of Italian Peninsula to c.499"
+    },
+    {
+        "id": 937,
+        "name": "Italy and adjacent territories to 476"
+    },
+    {
+        "id": 938,
+        "name": "Greece to 323"
+    },
+    {
+        "id": 939,
+        "name": "Other parts of ancient world"
+    },
+    {
+        "id": 940,
+        "name": "History of Europe"
+    },
+    {
+        "id": 941,
+        "name": "British Isles"
+    },
+    {
+        "id": 942,
+        "name": "England and Wales"
+    },
+    {
+        "id": 943,
+        "name": "Germany and neighboring central European countries"
+    },
+    {
+        "id": 944,
+        "name": "France and Monaco"
+    },
+    {
+        "id": 945,
+        "name": "Italy, San Marino, Vatican City, Malta"
+    },
+    {
+        "id": 946,
+        "name": "Spain, Andorra, Gibraltar, Portugal"
+    },
+    {
+        "id": 947,
+        "name": "Russia and neighboring east European countries"
+    },
+    {
+        "id": 948,
+        "name": "Scandinavia"
+    },
+    {
+        "id": 949,
+        "name": "Other parts of Europe"
+    },
+    {
+        "id": 950,
+        "name": "History of Asia"
+    },
+    {
+        "id": 951,
+        "name": "China and adjacent areas"
+    },
+    {
+        "id": 952,
+        "name": "Japan"
+    },
+    {
+        "id": 953,
+        "name": "Arabian Peninsula and adjacent areas"
+    },
+    {
+        "id": 954,
+        "name": "India and neighboring south Asian countries"
+    },
+    {
+        "id": 955,
+        "name": "Iran"
+    },
+    {
+        "id": 956,
+        "name": "Middle East (Near East)"
+    },
+    {
+        "id": 957,
+        "name": "Siberia (Asiatic Russia)"
+    },
+    {
+        "id": 958,
+        "name": "Central Asia"
+    },
+    {
+        "id": 959,
+        "name": "Southeast Asia"
+    },
+    {
+        "id": 960,
+        "name": "History of Africa"
+    },
+    {
+        "id": 961,
+        "name": "Tunisia and Libya"
+    },
+    {
+        "id": 962,
+        "name": "Egypt, Sudan, South Sudan"
+    },
+    {
+        "id": 963,
+        "name": "Ethiopia and Eritrea"
+    },
+    {
+        "id": 964,
+        "name": "Morocco, Ceuta, Melilla Western Sahara, Canary Islands"
+    },
+    {
+        "id": 965,
+        "name": "Algeria"
+    },
+    {
+        "id": 966,
+        "name": "West Africa and offshore islands"
+    },
+    {
+        "id": 967,
+        "name": "Central Africa and offshore islands"
+    },
+    {
+        "id": 968,
+        "name": "South Africa & southern Africa"
+    },
+    {
+        "id": 969,
+        "name": "South Indian Ocean islands"
+    },
+    {
+        "id": 970,
+        "name": "History of North America"
+    },
+    {
+        "id": 971,
+        "name": "Canada"
+    },
+    {
+        "id": 972,
+        "name": "Mexico, Central America, West Indies, Bermuda"
+    },
+    {
+        "id": 973,
+        "name": "United States"
+    },
+    {
+        "id": 974,
+        "name": "Northeastern United States (New England and Middle Atlantic states)"
+    },
+    {
+        "id": 975,
+        "name": "Southeastern United States (South Atlantic states)"
+    },
+    {
+        "id": 976,
+        "name": "South central United States"
+    },
+    {
+        "id": 977,
+        "name": "North central United States"
+    },
+    {
+        "id": 978,
+        "name": "Western United States"
+    },
+    {
+        "id": 979,
+        "name": "Great Basin and Pacific Slope region of United States"
+    },
+    {
+        "id": 980,
+        "name": "History of South America"
+    },
+    {
+        "id": 981,
+        "name": "Brazil"
+    },
+    {
+        "id": 982,
+        "name": "Argentina"
+    },
+    {
+        "id": 983,
+        "name": "Chile"
+    },
+    {
+        "id": 984,
+        "name": "Bolivia"
+    },
+    {
+        "id": 985,
+        "name": "Peru"
+    },
+    {
+        "id": 986,
+        "name": "Colombia and Ecuador"
+    },
+    {
+        "id": 987,
+        "name": "Venezuela"
+    },
+    {
+        "id": 988,
+        "name": "Guiana"
+    },
+    {
+        "id": 989,
+        "name": "Paraguay and Uruguay"
+    },
+    {
+        "id": 990,
+        "name": "History of Australasia, Pacific Ocean islands, Atlantic Ocean islands, Arctic islands, Antarctica, extraterrestrial worlds"
+    },
+    {
+        "id": 993,
+        "name": "New Zealand"
+    },
+    {
+        "id": 994,
+        "name": "Australia"
+    },
+    {
+        "id": 995,
+        "name": "New Guinea and neighboring countries of Melanesia"
+    },
+    {
+        "id": 996,
+        "name": "Polynesia and other Pacific Ocean islands"
+    },
+    {
+        "id": 997,
+        "name": "Atlantic Ocean islands"
+    },
+    {
+        "id": 998,
+        "name": "Arctic islands and Antarctica"
+    },
+    {
+        "id": 999,
+        "name": "Extraterrestrial worlds"
+    }
+]
