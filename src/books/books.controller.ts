@@ -17,6 +17,7 @@ import {
   ApiForbiddenResponse,
   ApiNotFoundResponse,
   ApiOkResponse,
+  ApiTags,
   getSchemaPath,
 } from '@nestjs/swagger';
 import { Roles } from 'src/auth/decorators/roles.decorator';
@@ -35,6 +36,7 @@ import { BookCopy } from './entities/book-copy.entity';
 
 // TODO: Implement the BooksController, this is just a placeholder
 @Controller('books')
+@ApiTags('books')
 @ApiExtraModels(PaginatedDto)
 export class BooksController {
   constructor(private readonly booksService: BooksService) {}
