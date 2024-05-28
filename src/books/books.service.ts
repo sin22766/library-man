@@ -25,85 +25,63 @@ export class BooksService {
     private publisherRepository: Repository<Publisher>,
   ) {}
 
-  async add(addBookDto: AddBookDto): Promise<Book> {
-    const authors = await this.authorRepository.upsert(
-      addBookDto.authors.map((author) => ({ name: author })),
+  private async upsertAuthors(names: string[]): Promise<Author[]> {
+    const result = await this.authorRepository.upsert(
+      names.map((name) => ({ name })),
       ['name'],
     );
+    return result.generatedMaps as Author[];
+  }
 
+  private async upsertPublisher(name: string): Promise<Publisher> {
+    const result = await this.publisherRepository.upsert({ name }, ['name']);
+    return result.generatedMaps[0] as Publisher;
+  }
+
+  async add(addBookDto: AddBookDto): Promise<Book> {
+    const authors = await this.upsertAuthors(addBookDto.authors);
     const book = this.booksRepository.create({
-      title: addBookDto.title,
-      isbn: addBookDto.isbn,
-      authors: authors.generatedMaps,
+      ...addBookDto,
+      authors,
       category: { id: addBookDto.categoryId },
     });
-
     return this.booksRepository.save(book);
   }
 
-  async addCopy(id: string, addBookCopyDto: AddBookCopyDto): Promise<BookCopy> {
-    const publisher = await this.publisherRepository.upsert(
-      { name: addBookCopyDto.publisher },
-      ['name'],
-    );
-
+  async addCopy(
+    bookId: string,
+    addBookCopyDto: AddBookCopyDto,
+  ): Promise<BookCopy> {
+    const publisher = await this.upsertPublisher(addBookCopyDto.publisher);
     const bookCopy = this.bookCopyRepository.create({
-      publishedAt: addBookCopyDto.publishedAt,
-      publisher: publisher.generatedMaps[0],
-      book: { id },
+      ...addBookCopyDto,
+      publisher,
+      book: { id: bookId },
     });
-
     return this.bookCopyRepository.save(bookCopy);
   }
 
   async findAll(query: FindAllBookDto): Promise<PaginatedDto<Book>> {
     const { pageSize, page, title, author, category, publisher } = query;
+    const where = {
+      title: title ? ILike(`%${title}%`) : undefined,
+      category: category ? { name: ILike(`%${category}%`) } : undefined,
+      bookCopies: publisher
+        ? { publisher: { name: ILike(`%${publisher}%`) } }
+        : undefined,
+      authors: author ? { name: ILike(`%${author}%`) } : undefined,
+    };
 
-    console.log(query);
-
-    const result = await this.booksRepository.find({
-      relations: {
-        category: true,
-        bookCopies: {
-          publisher: true,
-        },
-        authors: true,
-      },
-      where: {
-        title: title ? ILike(`%${title}%`) : undefined,
-        category: category ? { name: ILike(`%${category}%`) } : undefined,
-        bookCopies: {
-          publisher: publisher ? { name: ILike(`%${publisher}%`) } : undefined,
-        },
-        authors: author ? { name: ILike(`%${author}%`) } : undefined,
-      },
+    const [items, total] = await this.booksRepository.findAndCount({
+      relations: ['category', 'bookCopies', 'bookCopies.publisher', 'authors'],
+      where,
       take: pageSize,
       skip: (page - 1) * pageSize,
-      order: {
-        title: 'ASC',
-      },
-    });
-
-    const total = await this.booksRepository.count({
-      where: {
-        title: title ? ILike(`%${title}%`) : undefined,
-        category: category ? { name: ILike(`%${category}%`) } : undefined,
-        bookCopies: {
-          publisher: publisher ? { name: ILike(`%${publisher}%`) } : undefined,
-        },
-        authors: author ? { name: ILike(`%${author}%`) } : undefined,
-      },
-      relations: {
-        category: true,
-        bookCopies: {
-          publisher: true,
-        },
-        authors: true,
-      },
+      order: { title: 'ASC' },
     });
 
     return {
-      items: result,
+      items,
       page,
       pageSize,
       totalPages: Math.ceil(total / pageSize),
@@ -112,35 +90,56 @@ export class BooksService {
   }
 
   async findById(id: string): Promise<Book | null> {
-    return this.booksRepository.findOneBy({ id });
+    return this.booksRepository.findOne({
+      where: { id },
+      relations: {
+        authors: true,
+        category: true,
+        bookCopies: {
+          publisher: true,
+        },
+      },
+    });
   }
 
   async findByISBN(isbn: string): Promise<Book | null> {
-    return this.booksRepository.findOneBy({ isbn });
+    return this.booksRepository.findOne({
+      where: { isbn },
+      relations: {
+        authors: true,
+        category: true,
+        bookCopies: {
+          publisher: true,
+        },
+      },
+    });
   }
 
-  async update(book: Book, updateBookDto: UpdateBookDto) {
-    const authors = updateBookDto.authors
-      ? await this.authorRepository.upsert(
-          updateBookDto.authors.map((author) => ({ name: author })),
-          ['name'],
-        )
-      : undefined;
+  async update(book: Book, updateBookDto: UpdateBookDto): Promise<Book> {
+    if (updateBookDto.authors) {
+      const authors = await this.upsertAuthors(updateBookDto.authors);
+      book.authors = authors;
+    }
 
-    book = {
-      ...book,
-      ...updateBookDto,
-      authors: authors?.generatedMaps as Author[],
-    };
+    if (updateBookDto.isbn) {
+      book.isbn = updateBookDto.isbn;
+    }
 
+    if (updateBookDto.title) {
+      book.title = updateBookDto.title;
+    }
+
+    if (updateBookDto.categoryId) {
+      book.category.id = updateBookDto.categoryId;
+    }
     return this.booksRepository.save(book);
   }
 
-  async remove(id: string) {
-    return this.booksRepository.delete(id);
+  async remove(id: string): Promise<void> {
+    await this.booksRepository.delete(id);
   }
 
-  async removeCopy(id: string) {
-    return this.bookCopyRepository.delete(id);
+  async removeCopy(id: string): Promise<void> {
+    await this.bookCopyRepository.delete(id);
   }
 }
