@@ -3,12 +3,14 @@ import {
   Column,
   Entity,
   ManyToOne,
+  OneToMany,
   PrimaryGeneratedColumn,
   type Relation,
 } from 'typeorm';
 
 import { Book } from './book.entity';
 import { Publisher } from './publisher.entity';
+import { Checkout } from 'src/checkout/entities/checkout.entity';
 
 @Entity()
 export class BookCopy {
@@ -27,4 +29,7 @@ export class BookCopy {
   @ManyToOne(() => Book, (book) => book.bookCopies)
   @ApiProperty()
   book: Relation<Book>;
+
+  @OneToMany(() => Checkout, (checkout) => checkout.bookCopy)
+  checkouts: Relation<Checkout[]>;
 }

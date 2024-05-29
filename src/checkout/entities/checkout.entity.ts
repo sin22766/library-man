@@ -1,3 +1,4 @@
+import { BookCopy } from 'src/books/entities/book-copy.entity';
 import { User } from 'src/users/entities/user.entity';
 import {
   Column,
@@ -22,6 +23,9 @@ export class Checkout {
     nullable: true,
   })
   returnDate: Date;
+
+  @ManyToOne(() => BookCopy, (bookCopy) => bookCopy.checkouts)
+  bookCopy: Relation<BookCopy>;
 
   @ManyToOne(() => User, (user) => user.checkouts)
   user: Relation<User>;

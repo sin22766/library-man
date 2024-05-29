@@ -23,7 +23,7 @@ export class Author {
   name: string;
 
   @ManyToMany(() => Book, (book) => book.authors)
-  @JoinTable()
+  @JoinTable({ name: 'book_author' })
   @ApiProperty()
   books: Relation<Book[]>;
 }
