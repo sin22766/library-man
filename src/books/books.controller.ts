@@ -25,7 +25,6 @@ import { JWTAuthGuard } from 'src/auth/guards/jwt.guard';
 import { RolesGuard } from 'src/auth/guards/roles.guard';
 import { UserRole } from 'src/users/entities/user.entity';
 
-import { BooksService } from './books.service';
 import { AddBookDto } from './dto/add-book.dto';
 import { AddBookCopyDto } from './dto/add-book-copy.dto';
 import { FindAllBookDto } from './dto/find-all-book.dto';
@@ -33,13 +32,22 @@ import { PaginatedDto } from './dto/paginated.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 import { Book } from './entities/book.entity';
 import { BookCopy } from './entities/book-copy.entity';
+import {AuthorService} from "./services/author.service";
+import {PublisherService} from "./services/publisher.service";
+import {BookService} from "./services/book.service";
+import {BookCopyService} from "./services/book-copy.service";
 
 // TODO: Implement the BooksController, this is just a placeholder
 @Controller('books')
 @ApiTags('books')
 @ApiExtraModels(PaginatedDto)
 export class BooksController {
-  constructor(private readonly booksService: BooksService) {}
+  constructor(
+      private readonly authorService: AuthorService,
+      private readonly publisherService: PublisherService,
+      private readonly bookService: BookService,
+      private readonly bookCopyService: BookCopyService,
+  ) {}
 
   @UseGuards(JWTAuthGuard, RolesGuard)
   @Roles(UserRole.STAFF)
@@ -48,7 +56,8 @@ export class BooksController {
   @ApiCreatedResponse({ description: 'Book added', type: Book })
   @ApiForbiddenResponse({ description: 'Forbidden' })
   async add(@Body() addBookDto: AddBookDto) {
-    return this.booksService.add(addBookDto);
+    const authors = await this.authorService.upsertAuthors(addBookDto.authors);
+    return this.bookService.add(authors,addBookDto);
   }
 
   @UseGuards(JWTAuthGuard, RolesGuard)
@@ -58,10 +67,11 @@ export class BooksController {
   @ApiCreatedResponse({ description: 'Book Copy added', type: BookCopy })
   @ApiForbiddenResponse({ description: 'Forbidden' })
   async addCopy(
-    @Body() addBookCopyDto: AddBookCopyDto,
-    @Param('id') id: string,
+      @Body() addBookCopyDto: AddBookCopyDto,
+      @Param('id') id: string,
   ) {
-    return this.booksService.addCopy(id, addBookCopyDto);
+    const publisher = await this.publisherService.upsertPublisher(addBookCopyDto.publisher)
+    return this.bookCopyService.addCopy(id, addBookCopyDto, publisher);
   }
 
   @ApiOkResponse({
@@ -82,14 +92,14 @@ export class BooksController {
   })
   @Get()
   async findAll(@Query() query: FindAllBookDto): Promise<PaginatedDto<Book>> {
-    return this.booksService.findAll(query);
+    return this.bookService.findAll(query);
   }
 
   @Get(':id')
   @ApiOkResponse({ description: 'Book found', type: Book })
   @ApiNotFoundResponse({ description: 'Book not found' })
   async findById(@Param('id') id: string) {
-    const book = await this.booksService.findById(id);
+    const book = await this.bookService.findById(id);
 
     if (!book) {
       throw new NotFoundException('Book not found');
@@ -102,7 +112,7 @@ export class BooksController {
   @ApiOkResponse({ description: 'Book found', type: Book })
   @ApiNotFoundResponse({ description: 'Book not found' })
   async findByISBN(@Param('isbn') isbn: string) {
-    const book = await this.booksService.findByISBN(isbn);
+    const book = await this.bookService.findByISBN(isbn);
 
     if (!book) {
       throw new NotFoundException('Book not found');
@@ -119,13 +129,14 @@ export class BooksController {
   @ApiForbiddenResponse({ description: 'Forbidden' })
   @ApiNotFoundResponse({ description: 'Book not found' })
   async update(@Param('id') id: string, @Body() updateBookDto: UpdateBookDto) {
-    const book = await this.booksService.findById(id);
+    const book = await this.bookService.findById(id);
 
     if (!book) {
       throw new NotFoundException('Book not found');
     }
+    const authors = updateBookDto.authors ? await this.authorService.upsertAuthors(updateBookDto.authors) : [];
 
-    return this.booksService.update(book, updateBookDto);
+    return this.bookService.update(book, updateBookDto, authors);
   }
 
   @UseGuards(JWTAuthGuard, RolesGuard)
@@ -136,13 +147,13 @@ export class BooksController {
   @ApiForbiddenResponse({ description: 'Forbidden' })
   @ApiNotFoundResponse({ description: 'Book not found' })
   async remove(@Param('id') id: string) {
-    const book = await this.booksService.findById(id);
+    const book = await this.bookService.findById(id);
 
     if (!book) {
       throw new NotFoundException('Book not found');
     }
 
-    return this.booksService.remove(id);
+    return this.bookService.remove(id);
   }
 
   @UseGuards(JWTAuthGuard, RolesGuard)
@@ -153,12 +164,12 @@ export class BooksController {
   @ApiForbiddenResponse({ description: 'Forbidden' })
   @ApiNotFoundResponse({ description: 'Book not found' })
   async removeCopy(@Param('id') id: string, @Param('copyId') copyId: string) {
-    const book = await this.booksService.findById(id);
+    const book = await this.bookService.findById(id);
 
     if (!book) {
       throw new NotFoundException('Book not found');
     }
 
-    return this.booksService.removeCopy(copyId);
+    return this.bookCopyService.removeCopy(copyId);
   }
 }
