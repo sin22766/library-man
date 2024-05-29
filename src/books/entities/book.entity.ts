@@ -12,6 +12,7 @@ import {
 import { Author } from './author.entity';
 import { BookCopy } from './book-copy.entity';
 import { Category } from './category.entity';
+import { Checkout } from '../../checkout/entities/checkout.entity';
 
 @Entity()
 export class Book {
@@ -31,6 +32,10 @@ export class Book {
   isbn: string;
 
   @ApiProperty()
+  @Column({default:false})
+  available: boolean;
+
+  @ApiProperty()
   @ManyToMany(() => Author, (author) => author.books)
   authors: Relation<Author[]>;
 
@@ -41,4 +46,7 @@ export class Book {
   @ApiProperty()
   @OneToMany(() => BookCopy, (bookCopy) => bookCopy.book)
   bookCopies: Relation<BookCopy[]>;
+
+  @OneToMany(() => Checkout, checkout => checkout.book)
+  checkouts: Checkout[];
 }

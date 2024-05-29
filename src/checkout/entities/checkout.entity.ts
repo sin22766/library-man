@@ -1,5 +1,6 @@
 import { BookCopy } from 'src/books/entities/book-copy.entity';
 import { User } from 'src/users/entities/user.entity';
+import { Book } from '../../books/entities/book.entity';
 import {
   Column,
   Entity,
@@ -19,6 +20,9 @@ export class Checkout {
   @Column()
   endDate: Date;
 
+  @Column({default:false})
+  returned: boolean;
+
   @Column({
     nullable: true,
   })
@@ -29,4 +33,7 @@ export class Checkout {
 
   @ManyToOne(() => User, (user) => user.checkouts)
   user: Relation<User>;
+
+  @ManyToOne(() => Book, book => book.checkouts)
+  book: Book;
 }

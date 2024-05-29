@@ -32,4 +32,7 @@ export class BookCopy {
 
   @OneToMany(() => Checkout, (checkout) => checkout.bookCopy)
   checkouts: Relation<Checkout[]>;
+
+  @Column({default:false})
+  Available: boolean;
 }
