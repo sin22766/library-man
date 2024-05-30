@@ -1,6 +1,6 @@
+import { ApiProperty } from '@nestjs/swagger';
 import { BookCopy } from 'src/books/entities/book-copy.entity';
 import { User } from 'src/users/entities/user.entity';
-import { Book } from '../../books/entities/book.entity';
 import {
   Column,
   Entity,
@@ -8,7 +8,8 @@ import {
   PrimaryGeneratedColumn,
   type Relation,
 } from 'typeorm';
-import { ApiProperty } from '@nestjs/swagger';
+
+import { Book } from '../../books/entities/book.entity';
 
 @Entity()
 export class Checkout {

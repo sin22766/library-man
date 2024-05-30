@@ -1,4 +1,5 @@
 import { ApiProperty } from '@nestjs/swagger';
+import { Checkout } from 'src/checkout/entities/checkout.entity';
 import {
   Column,
   Entity,
@@ -10,7 +11,6 @@ import {
 
 import { Book } from './book.entity';
 import { Publisher } from './publisher.entity';
-import { Checkout } from 'src/checkout/entities/checkout.entity';
 
 @Entity()
 export class BookCopy {

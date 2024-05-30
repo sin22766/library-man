@@ -32,10 +32,10 @@ import { PaginatedDto } from './dto/paginated.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
 import { Book } from './entities/book.entity';
 import { BookCopy } from './entities/book-copy.entity';
-import {AuthorService} from "./services/author.service";
-import {PublisherService} from "./services/publisher.service";
-import {BookService} from "./services/book.service";
-import {BookCopyService} from "./services/book-copy.service";
+import { AuthorService } from './services/author.service';
+import { BookService } from './services/book.service';
+import { BookCopyService } from './services/book-copy.service';
+import { PublisherService } from './services/publisher.service';
 
 // TODO: Implement the BooksController, this is just a placeholder
 @Controller('books')
@@ -43,10 +43,10 @@ import {BookCopyService} from "./services/book-copy.service";
 @ApiExtraModels(PaginatedDto)
 export class BooksController {
   constructor(
-      private readonly authorService: AuthorService,
-      private readonly publisherService: PublisherService,
-      private readonly bookService: BookService,
-      private readonly bookCopyService: BookCopyService,
+    private readonly authorService: AuthorService,
+    private readonly publisherService: PublisherService,
+    private readonly bookService: BookService,
+    private readonly bookCopyService: BookCopyService,
   ) {}
 
   @UseGuards(JWTAuthGuard, RolesGuard)
@@ -57,7 +57,7 @@ export class BooksController {
   @ApiForbiddenResponse({ description: 'Forbidden' })
   async add(@Body() addBookDto: AddBookDto) {
     const authors = await this.authorService.upsertAuthors(addBookDto.authors);
-    return this.bookService.add(authors,addBookDto);
+    return this.bookService.add(authors, addBookDto);
   }
 
   @UseGuards(JWTAuthGuard, RolesGuard)
@@ -67,10 +67,12 @@ export class BooksController {
   @ApiCreatedResponse({ description: 'Book Copy added', type: BookCopy })
   @ApiForbiddenResponse({ description: 'Forbidden' })
   async addCopy(
-      @Body() addBookCopyDto: AddBookCopyDto,
-      @Param('id') id: string,
+    @Body() addBookCopyDto: AddBookCopyDto,
+    @Param('id') id: string,
   ) {
-    const publisher = await this.publisherService.upsertPublisher(addBookCopyDto.publisher)
+    const publisher = await this.publisherService.upsertPublisher(
+      addBookCopyDto.publisher,
+    );
     return this.bookCopyService.addCopy(id, addBookCopyDto, publisher);
   }
 
@@ -134,7 +136,9 @@ export class BooksController {
     if (!book) {
       throw new NotFoundException('Book not found');
     }
-    const authors = updateBookDto.authors ? await this.authorService.upsertAuthors(updateBookDto.authors) : [];
+    const authors = updateBookDto.authors
+      ? await this.authorService.upsertAuthors(updateBookDto.authors)
+      : [];
 
     return this.bookService.update(book, updateBookDto, authors);
   }

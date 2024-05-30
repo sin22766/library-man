@@ -1,5 +1,3 @@
-// @ts-check
-
 import eslint from '@eslint/js';
 import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';

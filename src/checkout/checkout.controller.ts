@@ -1,9 +1,9 @@
 import {
-  Controller,
-  Post,
-  NotFoundException,
-  UseGuards,
   Body,
+  Controller,
+  NotFoundException,
+  Post,
+  UseGuards,
 } from '@nestjs/common';
 import {
   ApiBearerAuth,
@@ -16,8 +16,9 @@ import { Roles } from 'src/auth/decorators/roles.decorator';
 import { JWTAuthGuard } from 'src/auth/guards/jwt.guard';
 import { RolesGuard } from 'src/auth/guards/roles.guard';
 import { UserRole } from 'src/users/entities/user.entity';
-import { CheckoutBookDto } from './dto/checkout-book.dto';
+
 import { CheckoutService } from './checkout.service';
+import { CheckoutBookDto } from './dto/checkout-book.dto';
 import { ReturnBookDto } from './dto/return-book.dto';
 import { Checkout } from './entities/checkout.entity';
 

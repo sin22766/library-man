@@ -9,10 +9,10 @@ import {
   type Relation,
 } from 'typeorm';
 
+import { Checkout } from '../../checkout/entities/checkout.entity';
 import { Author } from './author.entity';
 import { BookCopy } from './book-copy.entity';
 import { Category } from './category.entity';
-import { Checkout } from '../../checkout/entities/checkout.entity';
 
 @Entity()
 export class Book {
@@ -32,7 +32,7 @@ export class Book {
   isbn: string;
 
   @ApiProperty()
-  @Column({default:false})
+  @Column({ default: false })
   available: boolean;
 
   @ApiProperty()
@@ -47,6 +47,6 @@ export class Book {
   @OneToMany(() => BookCopy, (bookCopy) => bookCopy.book)
   bookCopies: Relation<BookCopy[]>;
 
-  @OneToMany(() => Checkout, checkout => checkout.book)
+  @OneToMany(() => Checkout, (checkout) => checkout.book)
   checkouts: Checkout[];
 }
