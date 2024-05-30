@@ -5,6 +5,7 @@ import { User } from 'src/users/entities/user.entity';
 import { UsersService } from 'src/users/users.service';
 
 import { JWTPayloadDto } from './dto/payload.dto';
+import { TokenDto } from './dto/token.dto';
 
 @Injectable()
 export class AuthService {
@@ -35,7 +36,7 @@ export class AuthService {
     return user;
   }
 
-  async login(user: User): Promise<{ access_token: string }> {
+  async login(user: User): Promise<TokenDto> {
     const payload: JWTPayloadDto = {
       id: user.id,
       email: user.email,
