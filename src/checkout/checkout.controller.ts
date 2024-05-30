@@ -1,5 +1,17 @@
-import { Controller, Post, NotFoundException, UseGuards } from '@nestjs/common';
-import { ApiBearerAuth, ApiForbiddenResponse, ApiOkResponse, ApiTags } from '@nestjs/swagger';
+import {
+  Controller,
+  Post,
+  NotFoundException,
+  UseGuards,
+  Body,
+} from '@nestjs/common';
+import {
+  ApiBearerAuth,
+  ApiForbiddenResponse,
+  ApiNotFoundResponse,
+  ApiOkResponse,
+  ApiTags,
+} from '@nestjs/swagger';
 import { Roles } from 'src/auth/decorators/roles.decorator';
 import { JWTAuthGuard } from 'src/auth/guards/jwt.guard';
 import { RolesGuard } from 'src/auth/guards/roles.guard';
@@ -7,10 +19,13 @@ import { UserRole } from 'src/users/entities/user.entity';
 import { CheckoutBookDto } from './dto/checkout-book.dto';
 import { CheckoutService } from './checkout.service';
 import { ReturnBookDto } from './dto/return-book.dto';
+import { Checkout } from './entities/checkout.entity';
+
 @Controller('checkout')
 @ApiTags('checkout')
 export class CheckoutController {
   constructor(private readonly checkoutService: CheckoutService) {}
+
   @Post()
   @UseGuards(JWTAuthGuard, RolesGuard)
   @Roles(UserRole.MEMBER)
@@ -30,14 +45,16 @@ export class CheckoutController {
   @UseGuards(JWTAuthGuard, RolesGuard)
   @Roles(UserRole.MEMBER)
   @ApiBearerAuth()
-  @ApiOkResponse({ description: 'Return complete' })
+  @ApiOkResponse({ description: 'Return complete', type: Checkout })
+  @ApiNotFoundResponse({ description: 'Checkout not found' })
   async returnBook(@Body() returnBookDto: ReturnBookDto) {
     const { bookId, userId } = returnBookDto;
-    try {
-      const result = await this.checkoutService.returnBook(bookId, userId);
-      return { message: result };
-    } catch (error) {
-      throw new NotFoundException(error.message);
+    const result = await this.checkoutService.returnBook(bookId, userId);
+
+    if (!result) {
+      throw new NotFoundException('Checkout not found');
     }
+
+    return result;
   }
 }

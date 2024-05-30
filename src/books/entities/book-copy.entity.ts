@@ -31,8 +31,6 @@ export class BookCopy {
   book: Relation<Book>;
 
   @OneToMany(() => Checkout, (checkout) => checkout.bookCopy)
+  @ApiProperty()
   checkouts: Relation<Checkout[]>;
-
-  @Column({default:false})
-  Available: boolean;
 }
