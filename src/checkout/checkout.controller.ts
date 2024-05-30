@@ -1,8 +1,10 @@
 import {
   Body,
   Controller,
+  Get,
   NotFoundException,
   Post,
+  Query,
   UseGuards,
 } from '@nestjs/common';
 import {
@@ -21,15 +23,26 @@ import { CheckoutService } from './checkout.service';
 import { CheckoutBookDto } from './dto/checkout-book.dto';
 import { ReturnBookDto } from './dto/return-book.dto';
 import { Checkout } from './entities/checkout.entity';
+import { FindAllCheckoutDto } from './dto/find-all-checkout.dto';
 
 @Controller('checkout')
 @ApiTags('checkout')
 export class CheckoutController {
   constructor(private readonly checkoutService: CheckoutService) {}
 
+  @Get()
+  @UseGuards(JWTAuthGuard, RolesGuard)
+  @Roles(UserRole.STAFF)
+  @ApiBearerAuth()
+  @ApiOkResponse({ description: 'Found checkout' })
+  @ApiForbiddenResponse({ description: 'Forbidden' })
+  async findALl(@Query() query: FindAllCheckoutDto) {
+    return this.checkoutService.findAll(query);
+  }
+
   @Post()
   @UseGuards(JWTAuthGuard, RolesGuard)
-  @Roles(UserRole.MEMBER)
+  @Roles(UserRole.STAFF)
   @ApiBearerAuth()
   @ApiOkResponse({ description: 'Checkout complete' })
   @ApiNotFoundResponse({
@@ -37,12 +50,7 @@ export class CheckoutController {
   })
   @ApiForbiddenResponse({ description: 'Forbidden' })
   async checkout(@Body() checkoutBookDto: CheckoutBookDto) {
-    const checkout = await this.checkoutService.checkout(
-      checkoutBookDto.bookCopyId,
-      checkoutBookDto.userId,
-      checkoutBookDto.startDate,
-      checkoutBookDto.endDate,
-    );
+    const checkout = await this.checkoutService.checkout(checkoutBookDto);
 
     if (!checkout) {
       throw new NotFoundException('Book copy not available');
@@ -51,13 +59,12 @@ export class CheckoutController {
 
   @Post('return')
   @UseGuards(JWTAuthGuard, RolesGuard)
-  @Roles(UserRole.MEMBER)
+  @Roles(UserRole.STAFF)
   @ApiBearerAuth()
   @ApiOkResponse({ description: 'Return complete', type: Checkout })
   @ApiNotFoundResponse({ description: 'Checkout not found' })
   async returnBook(@Body() returnBookDto: ReturnBookDto) {
-    const { bookId, userId } = returnBookDto;
-    const result = await this.checkoutService.returnBook(bookId, userId);
+    const result = await this.checkoutService.returnBook(returnBookDto);
 
     if (!result) {
       throw new NotFoundException('Checkout not found');

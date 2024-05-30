@@ -12,11 +12,15 @@ export class UsersService {
   ) {}
 
   findById(id: string): Promise<User | null> {
-    return this.usersRepository.findOneBy({ id });
+    return this.usersRepository.findOne({
+      where: { id },
+    });
   }
 
   findByEmail(email: string): Promise<User | null> {
-    return this.usersRepository.findOneBy({ email });
+    return this.usersRepository.findOne({
+      where: { email },
+    });
   }
 
   async createMember(

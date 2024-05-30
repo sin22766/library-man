@@ -1,12 +1,15 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsString } from 'class-validator';
+import { IsNotEmpty, IsString, IsUUID } from 'class-validator';
 
 export class ReturnBookDto {
   @IsString()
+  @IsNotEmpty()
+  @IsUUID()
   @ApiProperty()
   bookId: string;
 
-  @IsString()
   @ApiProperty()
+  @IsNotEmpty()
+  @IsUUID()
   userId: string;
 }

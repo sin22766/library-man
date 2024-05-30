@@ -25,11 +25,15 @@ import { RegisterDto } from './dto/register.dto';
 import { TokenDto } from './dto/token.dto';
 import { JWTAuthGuard } from './guards/jwt.guard';
 import { LocalAuthGuard } from './guards/local.guard';
+import { UsersService } from 'src/users/users.service';
 
 @Controller('auth')
 @ApiTags('auth')
 export class AuthController {
-  constructor(private authService: AuthService) {}
+  constructor(
+    private authService: AuthService,
+    private userService: UsersService,
+  ) {}
 
   @Post('register')
   @HttpCode(HttpStatus.CREATED)
@@ -67,7 +71,15 @@ export class AuthController {
   @ApiOkResponse({ description: 'User profile', type: User })
   @ApiUnauthorizedResponse()
   @ApiBearerAuth()
-  profile(@AuthUser() user: User): User {
-    return user;
+  async profile(@AuthUser() user: User): Promise<Omit<User, 'password'>> {
+    const userDetail = await this.userService.findById(user.id);
+
+    if (!userDetail) {
+      throw new UnauthorizedException();
+    }
+
+    delete (userDetail as { password?: string }).password;
+
+    return userDetail;
   }
 }

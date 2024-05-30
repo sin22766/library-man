@@ -9,8 +9,6 @@ import {
   type Relation,
 } from 'typeorm';
 
-import { Book } from '../../books/entities/book.entity';
-
 @Entity()
 export class Checkout {
   @PrimaryGeneratedColumn()
