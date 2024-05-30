@@ -42,8 +42,4 @@ export class Checkout {
   @ManyToOne(() => User, (user) => user.checkouts)
   @ApiProperty()
   user: Relation<User>;
-
-  @ManyToOne(() => Book, (book) => book.checkouts)
-  @ApiProperty()
-  book: Relation<Book>;
 }

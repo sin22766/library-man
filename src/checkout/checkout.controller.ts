@@ -32,14 +32,21 @@ export class CheckoutController {
   @Roles(UserRole.MEMBER)
   @ApiBearerAuth()
   @ApiOkResponse({ description: 'Checkout complete' })
+  @ApiNotFoundResponse({
+    description: 'Book copy not available',
+  })
   @ApiForbiddenResponse({ description: 'Forbidden' })
   async checkout(@Body() checkoutBookDto: CheckoutBookDto) {
-    return this.checkoutService.checkout(
+    const checkout = await this.checkoutService.checkout(
       checkoutBookDto.bookCopyId,
       checkoutBookDto.userId,
       checkoutBookDto.startDate,
       checkoutBookDto.endDate,
     );
+
+    if (!checkout) {
+      throw new NotFoundException('Book copy not available');
+    }
   }
 
   @Post('return')

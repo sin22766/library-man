@@ -16,7 +16,7 @@ export class CheckoutService {
     userId: string,
     startDate: Date,
     endDate: Date,
-  ): Promise<Checkout> {
+  ): Promise<Checkout | null> {
     const checkout = await this.checkoutRepository.findOne({
       where: {
         bookCopy: { id: bookCopyId },
@@ -30,7 +30,7 @@ export class CheckoutService {
     });
 
     if (checkout && !checkout.returned) {
-      throw new Error('Book is not available');
+      return null;
     }
 
     const newCheckout = this.checkoutRepository.create({
